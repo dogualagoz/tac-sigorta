@@ -1,0 +1,30 @@
+# Nuxt
+.nuxt/
+.output/
+.data/
+dist/
+
+# Node
+node_modules/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Doğrulama modülü PDF'leri — web root dışı, asla git'e girmez
+storage/pdfs/*
+!storage/pdfs/.gitkeep
+
+# TypeScript / build
+*.tsbuildinfo

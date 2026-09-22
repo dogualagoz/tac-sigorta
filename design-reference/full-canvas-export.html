@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="091984da-f1a5-4517-8a8c-bee50b677c77"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1f8fc696-00ae-4bed-bb7b-5adb2383eecc") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b8237030-1031-4cba-9953-b93b58a58ea1") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1d0cc93d-21ac-42a8-b620-a4b8eff01a94") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5943133b-f6d9-452b-b39a-daa42684e1f2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("34417648-6794-4c4a-9404-e9261c1ece13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("1f8fc696-00ae-4bed-bb7b-5adb2383eecc") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b8237030-1031-4cba-9953-b93b58a58ea1") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("1d0cc93d-21ac-42a8-b620-a4b8eff01a94") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("5943133b-f6d9-452b-b39a-daa42684e1f2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("34417648-6794-4c4a-9404-e9261c1ece13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("1f8fc696-00ae-4bed-bb7b-5adb2383eecc") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b8237030-1031-4cba-9953-b93b58a58ea1") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("1d0cc93d-21ac-42a8-b620-a4b8eff01a94") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("5943133b-f6d9-452b-b39a-daa42684e1f2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("34417648-6794-4c4a-9404-e9261c1ece13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1f8fc696-00ae-4bed-bb7b-5adb2383eecc") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b8237030-1031-4cba-9953-b93b58a58ea1") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1d0cc93d-21ac-42a8-b620-a4b8eff01a94") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("5943133b-f6d9-452b-b39a-daa42684e1f2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("34417648-6794-4c4a-9404-e9261c1ece13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fd52d89b-dec7-4716-a23b-bd70659606bb") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("eef116f2-af5a-4bea-aea9-b16beffb5a37") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("48715954-60ba-4e29-8a70-0b8d3561adc7") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("ce791848-fd66-4270-aa8e-e4d6c0366c2c") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e0c44905-9340-4486-a484-afa7132748d2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("ee19d8dd-8c25-43ab-9915-cbb5061fb8b7") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("32324294-7793-48b7-9a79-6bc1b631dd13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fd52d89b-dec7-4716-a23b-bd70659606bb") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("eef116f2-af5a-4bea-aea9-b16beffb5a37") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("48715954-60ba-4e29-8a70-0b8d3561adc7") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("ce791848-fd66-4270-aa8e-e4d6c0366c2c") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e0c44905-9340-4486-a484-afa7132748d2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("ee19d8dd-8c25-43ab-9915-cbb5061fb8b7") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("32324294-7793-48b7-9a79-6bc1b631dd13") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0;background:#EEF1F5;font-family:"Source Sans 3",system-ui,sans-serif;color:#0B2E59}
+*{box-sizing:border-box}
+a{color:#0F5AA6;text-decoration:none}
+a:hover{color:#0B2E59;text-decoration:underline}
+h1,h2,h3,h4{font-family:"Libre Franklin",system-ui,sans-serif;margin:0;text-wrap:pretty;hyphens:auto}
+p{margin:0;text-wrap:pretty}
+</style></helmet>
+
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:56px;padding:40px 0 80px;width:max-content;margin:0 auto">
+
+<div style="width:1200px">
+<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px">
+<span style="font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0B2E59;color:#fff;border-radius:4px">1</span>
+<span style="font:600 13px 'Libre Franklin',sans-serif">Startseite — Desktop (1200px)</span>
+<span style="font:400 12px 'Source Sans 3',sans-serif;color:#5B7391">Vollständige Seite</span>
+</div>
+</div>
+
+<div data-screen-label="Startseite" style="width:1200px;background:#fff;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+
+  <div style="background:#0B2E59;color:#fff;font:400 13px 'Source Sans 3',sans-serif">
+    <div style="max-width:1200px;margin:0 auto;padding:0 48px;height:44px;display:flex;align-items:center;justify-content:space-between">
+      <span style="color:#BFD6EA">Beratung für Reiseveranstalter: <span style="color:#fff">+49 30 8847 2100</span> · Mo–Fr 08:30–17:30</span>
+      <span style="display:flex;gap:22px;align-items:center;color:#BFD6EA">
+        <a href="#" style="color:#BFD6EA">Maklerportal</a>
+        <a href="#" style="color:#BFD6EA">Schadenmeldung</a>
+        <span style="color:#3C6390">|</span>
+        <span><strong style="color:#fff">DE</strong> · TR</span>
+      </span>
+    </div>
+  </div>
+
+  <div style="border-bottom:1px solid #D6E4F0;background:#fff">
+    <div style="max-width:1200px;margin:0 auto;padding:0 48px;height:82px;display:flex;align-items:center;justify-content:space-between;gap:40px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:38px;height:38px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 15px 'Libre Franklin',sans-serif;letter-spacing:-.5px">TSC</div>
+        <div style="line-height:1.15">
+          <div style="font:700 17px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</div>
+          <div style="font:400 11.5px 'Source Sans 3',sans-serif;color:#5B7391;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Reiseabsicherung seit 1986</div>
+        </div>
+      </div>
+      <nav style="display:flex;align-items:center;gap:30px;font:600 14.5px 'Libre Franklin',sans-serif">
+        <a href="#" style="color:#0B2E59;border-bottom:2px solid #0F5AA6;padding-bottom:3px">Insolvenzversicherung</a>
+        <a href="#" style="color:#0B2E59">Reiseversicherung</a>
+        <a href="#" style="color:#0B2E59">Rechtsgrundlagen</a>
+        <a href="#" style="color:#0B2E59">Downloads</a>
+        <a href="#" style="color:#0B2E59">Unternehmen</a>
+        <a href="#" style="display:flex;align-items:center;justify-content:center;height:46px;padding:0 20px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 14.5px 'Libre Franklin',sans-serif" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+      </nav>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:72px 48px 64px;display:grid;grid-template-columns:660px 1fr;gap:56px;align-items:start">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px;background:#EAF4FB;border:1px solid #D6E4F0;border-radius:4px;font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.04em;color:#0F5AA6;text-transform:uppercase;margin-bottom:26px">Gesetzlich vorgeschrieben · § 651r BGB</div>
+        <h1 style="font-size:50px;line-height:1.12;font-weight:700;letter-spacing:-.015em;max-width:640px">Insolvenzabsicherung für Reiseveranstalter — Reisesicherungsschein in 3 Werktagen.</h1>
+        <p style="margin-top:22px;font-size:19px;line-height:1.55;color:#38557A;max-width:580px">Ohne gültigen Reisesicherungsschein darf keine Pauschalreise verkauft werden. Wir prüfen Ihre Unterlagen, bestätigen die Deckung und stellen die Sicherungsscheine für Ihr gesamtes Buchungsvolumen aus.</p>
+        <p style="margin-top:14px;font-size:15px;line-height:1.5;color:#5B7391;max-width:560px">Bearbeitung durchschnittlich 3 Werktage von der vollständigen Anfrage bis zum ausgestellten Sicherungsschein.</p>
+        <div style="display:flex;gap:14px;margin-top:34px">
+          <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+          <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;background:#fff;color:#0B2E59;border:1px solid #0B2E59;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#EAF4FB;text-decoration:none">Rückruf vereinbaren</a>
+        </div>
+        <div style="display:flex;gap:28px;margin-top:30px;font:400 14px 'Source Sans 3',sans-serif;color:#5B7391">
+          <span>Keine Vorkasse</span><span>·</span><span>Prüfung kostenfrei</span><span>·</span><span>Deckung ab 1 Mio. €</span>
+        </div>
+      </div>
+      <div style="border:1px solid #D6E4F0;border-radius:8px;padding:28px;background:#fff">
+        <h3 style="font-size:17px;font-weight:600">Deckung prüfen</h3>
+        <p style="margin-top:6px;font-size:14px;line-height:1.5;color:#5B7391">Zwei Angaben genügen für eine erste Einschätzung.</p>
+        <label style="display:block;margin-top:20px;font:600 13px 'Source Sans 3',sans-serif;color:#0B2E59">Jahresumsatz Pauschalreisen</label>
+        <div style="display:flex;align-items:center;height:46px;margin-top:6px;border:1px solid #D6E4F0;border-radius:6px;padding:0 12px;font-size:15px;color:#0B2E59;justify-content:space-between">
+          <span>bis 3 Mio. €</span><span style="color:#5B7391;font-size:12px">▾</span>
+        </div>
+        <label style="display:block;margin-top:16px;font:600 13px 'Source Sans 3',sans-serif;color:#0B2E59">Firmensitz</label>
+        <div style="display:flex;align-items:center;height:46px;margin-top:6px;border:1px solid #D6E4F0;border-radius:6px;padding:0 12px;font-size:15px;color:#0B2E59;justify-content:space-between">
+          <span>Deutschland</span><span style="color:#5B7391;font-size:12px">▾</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;height:46px;margin-top:20px;background:#0B2E59;color:#fff;border-radius:6px;font:600 15px 'Libre Franklin',sans-serif">Einschätzung erhalten</div>
+        <p style="margin-top:14px;font-size:12.5px;line-height:1.45;color:#5B7391">Unverbindlich. Ihre Daten werden ausschließlich zur Angebotserstellung verwendet.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#EAF4FB;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:22px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+      <span style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#5B7391;white-space:nowrap">Geprüft &amp; beaufsichtigt</span>
+      <div style="display:flex;align-items:center;gap:14px;flex:1;justify-content:flex-end">
+        <div style="height:42px;padding:0 16px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font:600 13px 'Libre Franklin',sans-serif;color:#0B2E59">BaFin-beaufsichtigt</div>
+        <div style="height:42px;padding:0 16px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font:600 13px 'Libre Franklin',sans-serif;color:#0B2E59">GDV-Mitglied</div>
+        <div style="height:42px;padding:0 16px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font:600 13px 'Libre Franklin',sans-serif;color:#0B2E59">DRV-Partnerbetrieb</div>
+        <div style="height:42px;padding:0 16px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font:600 13px 'Libre Franklin',sans-serif;color:#0B2E59">1.400+ Veranstalter</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:76px 48px;display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start">
+      <div>
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#0F5AA6">Rechtsgrundlage</div>
+        <h2 style="margin-top:14px;font-size:34px;line-height:1.2;font-weight:700;max-width:620px">Kundengeldabsicherung ist keine Option, sondern Voraussetzung für den Vertrieb.</h2>
+        <p style="margin-top:20px;font-size:17px;line-height:1.6;color:#38557A;max-width:640px">Reiseveranstalter mit Sitz in Deutschland müssen Kundengelder nach § 651r BGB absichern, bevor sie Zahlungen von Reisenden annehmen. Der Nachweis erfolgt über den Reisesicherungsschein, der jedem Reisenden vor der ersten Zahlung ausgehändigt wird.</p>
+        <p style="margin-top:16px;font-size:17px;line-height:1.6;color:#38557A;max-width:640px">Seit der Reform 2021 laufen Veranstalter mit einem Jahresumsatz über 10 Mio. € über den Deutschen Reisesicherungsfonds. Unterhalb dieser Schwelle bleibt die Absicherung über einen Versicherer der zulässige Weg — dort setzen wir an.</p>
+        <p style="margin-top:18px;font-size:15px;line-height:1.55;color:#5B7391;max-width:600px">Kurz gefasst: unterhalb von 10 Mio. € Jahresumsatz ist die Absicherung über einen Versicherer zulässig — der Nachweis muss dem Reisenden vor der ersten Zahlung vorliegen.</p>
+        <div style="display:flex;gap:10px;margin-top:30px">
+          <a href="#" style="display:flex;align-items:center;height:46px;padding:0 20px;border:1px solid #D6E4F0;border-radius:6px;font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">§ 651r BGB im Wortlaut</a>
+          <a href="#" style="display:flex;align-items:center;height:46px;padding:0 20px;border:1px solid #D6E4F0;border-radius:6px;font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Merkblatt § 651s (PDF)</a>
+        </div>
+      </div>
+      <div style="border-left:2px solid #0F5AA6;padding:4px 0 4px 26px">
+        <div style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">§ 651r Abs. 1 BGB</div>
+        <p style="margin-top:12px;font:400 18px/1.55 'Libre Franklin',sans-serif;color:#0B2E59">„Der Reiseveranstalter hat sicherzustellen, dass dem Reisenden erstattet wird, was er zur Erfüllung des Vertrags gezahlt hat, soweit Reiseleistungen infolge Zahlungsunfähigkeit des Reiseveranstalters ausfallen.“</p>
+        <div style="margin-top:26px;padding-top:22px;border-top:1px solid #D6E4F0;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+          <div><div style="font:700 26px 'Libre Franklin',sans-serif">10 Mio. €</div><div style="font-size:13.5px;line-height:1.4;color:#5B7391;margin-top:4px">Umsatzschwelle zum Reisesicherungsfonds</div></div>
+          <div><div style="font:700 26px 'Libre Franklin',sans-serif">3 Werktage</div><div style="font-size:13.5px;line-height:1.4;color:#5B7391;margin-top:4px">durchschnittlich bis zum Sicherungsschein</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#0B2E59;color:#fff">
+    <div style="max-width:1200px;margin:0 auto;padding:72px 48px">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+        <div>
+          <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#7FB0DC">Ablauf</div>
+          <h2 style="margin-top:14px;font-size:34px;line-height:1.2;font-weight:700;max-width:620px;color:#fff">Von der Anfrage bis zum Sicherungsschein</h2>
+        </div>
+        <p style="font-size:15px;line-height:1.55;color:#BFD6EA;max-width:340px">Vier Schritte bis zum Sicherungsschein. Ein Ansprechpartner über den gesamten Vorgang.</p>
+      </div>
+      <div style="margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#28527E;border:1px solid #28527E;border-radius:8px;overflow:hidden">
+        <div style="background:#0B2E59;padding:28px 26px 30px">
+          <div style="font:700 13px ui-monospace,Menlo,monospace;color:#7FB0DC">01</div>
+          <h3 style="margin-top:16px;font-size:19px;line-height:1.3;font-weight:600;color:#fff">Anfrage &amp; Unterlagen</h3>
+          <p style="margin-top:10px;font-size:14.5px;line-height:1.55;color:#BFD6EA">Jahresabschluss, Umsatzplanung und Gewerbenachweis über das Formular oder verschlüsselt per E-Mail.</p>
+          <div style="margin-top:16px;font:400 13px 'Source Sans 3',sans-serif;color:#7FB0DC">Tag 1</div>
+        </div>
+        <div style="background:#0B2E59;padding:28px 26px 30px">
+          <div style="font:700 13px ui-monospace,Menlo,monospace;color:#7FB0DC">02</div>
+          <h3 style="margin-top:16px;font-size:19px;line-height:1.3;font-weight:600;color:#fff">Risikoprüfung</h3>
+          <p style="margin-top:10px;font-size:14.5px;line-height:1.55;color:#BFD6EA">Unsere Underwriter bewerten Bonität, Reiseart und Vorauszahlungsquote. Rückfragen gebündelt, nicht tröpfchenweise.</p>
+          <div style="margin-top:16px;font:400 13px 'Source Sans 3',sans-serif;color:#7FB0DC">Tag 1–2</div>
+        </div>
+        <div style="background:#0B2E59;padding:28px 26px 30px">
+          <div style="font:700 13px ui-monospace,Menlo,monospace;color:#7FB0DC">03</div>
+          <h3 style="margin-top:16px;font-size:19px;line-height:1.3;font-weight:600;color:#fff">Angebot &amp; Police</h3>
+          <p style="margin-top:10px;font-size:14.5px;line-height:1.55;color:#BFD6EA">Verbindliches Angebot mit Prämie, Deckungssumme und Selbstbehalt. Unterzeichnung digital.</p>
+          <div style="margin-top:16px;font:400 13px 'Source Sans 3',sans-serif;color:#7FB0DC">Tag 2–3</div>
+        </div>
+        <div style="background:#0B2E59;padding:28px 26px 30px">
+          <div style="font:700 13px ui-monospace,Menlo,monospace;color:#7FB0DC">04</div>
+          <h3 style="margin-top:16px;font-size:19px;line-height:1.3;font-weight:600;color:#fff">Sicherungsscheine</h3>
+          <p style="margin-top:10px;font-size:14.5px;line-height:1.55;color:#BFD6EA">Ausstellung im Maklerportal — einzeln oder als Serienbeleg, jederzeit nachdruckbar.</p>
+          <div style="margin-top:16px;font:400 13px 'Source Sans 3',sans-serif;color:#7FB0DC">Tag 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:76px 48px">
+      <div style="max-width:660px">
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#0F5AA6">Tarife</div>
+        <h2 style="margin-top:14px;font-size:34px;line-height:1.2;font-weight:700">Deckungsstufen nach Buchungsvolumen</h2>
+        <p style="margin-top:16px;font-size:17px;line-height:1.6;color:#38557A">Prämien gelten für Veranstalter ohne Schadenhistorie in den letzten drei Jahren. Selbstbehalt und Prämie werden nach Risikoprüfung final festgelegt.</p>
+      </div>
+      <div style="margin-top:38px;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;background:#EAF4FB;border-bottom:1px solid #D6E4F0;font:600 13.5px 'Libre Franklin',sans-serif;color:#0B2E59">
+          <div style="padding:16px 22px">Leistung</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">Basis</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#fff;box-shadow:inset 0 2px 0 #0F5AA6">Standard <span style="font:400 11.5px 'Source Sans 3',sans-serif;color:#0F5AA6">· empfohlen</span></div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">Premium</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-bottom:1px solid #D6E4F0;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Jahresumsatz Pauschalreisen</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">bis 1 Mio. €</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE">1–5 Mio. €</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">5–10 Mio. €</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-bottom:1px solid #D6E4F0;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Deckungssumme je Versicherungsjahr</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">1 Mio. €</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE">5 Mio. €</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">10 Mio. €</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-bottom:1px solid #D6E4F0;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Prämie ab</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;font-weight:600">0,68 % v. Umsatz</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE;font-weight:600">0,54 % v. Umsatz</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;font-weight:600">auf Anfrage</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-bottom:1px solid #D6E4F0;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Serienbelege im Portal</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;color:#5B7391">—</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE">inklusive</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">inklusive</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;border-bottom:1px solid #D6E4F0;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Incoming- &amp; Gruppenreisen</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;color:#5B7391">—</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE">auf Antrag</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">inklusive</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;font-size:15px">
+          <div style="padding:16px 22px;color:#38557A">Persönlicher Kundenbetreuer</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">Service-Team</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0;background:#F7FBFE">benannt</div>
+          <div style="padding:16px 22px;border-left:1px solid #D6E4F0">benannt, mit Vertretung</div>
+        </div>
+      </div>
+      <p style="margin-top:16px;font-size:13px;line-height:1.5;color:#5B7391">Alle Angaben zzgl. Versicherungsteuer. Beispielprämien, keine Angebotsbindung. Maßgeblich sind die Allgemeinen Versicherungsbedingungen (AVB 2026-01).</p>
+    </div>
+  </div>
+
+  <div style="background:#EAF4FB;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:60px 48px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:30px">
+        <h2 style="font-size:24px;font-weight:600">1.400 Reiseveranstalter arbeiten mit uns</h2>
+        <a href="#" style="font:600 14.5px 'Libre Franklin',sans-serif">Referenzen ansehen</a>
+      </div>
+      <div style="margin-top:28px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px">
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+        <div style="height:64px;background:#fff;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px ui-monospace,Menlo,monospace;color:#8AA2BC">Kundenlogo</div>
+      </div>
+      <div style="margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:8px;padding:26px 28px">
+          <p style="font:400 17px/1.55 'Libre Franklin',sans-serif;color:#0B2E59">„Die Prüfung lief in zwei Tagen durch, obwohl unsere Bilanz nicht einfach war. Die Serienbelege aus dem Portal haben uns die Saison gerettet.“</p>
+          <div style="margin-top:18px;font-size:14px;color:#5B7391">Katrin Beitzel · Geschäftsführerin, Alpenlust Reisen GmbH</div>
+        </div>
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:8px;padding:26px 28px">
+          <p style="font:400 17px/1.55 'Libre Franklin',sans-serif;color:#0B2E59">„Wir haben vier Anbieter angefragt. Nur hier hat jemand verstanden, wie Incoming-Gruppen kalkuliert werden.“</p>
+          <div style="margin-top:18px;font-size:14px;color:#5B7391">Mehmet Arslan · Inhaber, Bosporus Tours e.K.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:76px 48px;display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start">
+      <div>
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#0F5AA6">Häufige Fragen</div>
+        <h2 style="margin-top:14px;font-size:30px;line-height:1.22;font-weight:700;max-width:520px">Was Veranstalter vor Vertragsabschluss wissen wollen</h2>
+        <div style="margin-top:30px;border-top:1px solid #D6E4F0">
+          <div style="border-bottom:1px solid #D6E4F0;padding:20px 0">
+            <div style="display:flex;justify-content:space-between;gap:24px;align-items:baseline">
+              <h3 style="font-size:17.5px;font-weight:600;line-height:1.35">Ab welchem Umsatz brauche ich den Reisesicherungsfonds statt einer Versicherung?</h3>
+              <span style="color:#0F5AA6;font-size:20px;line-height:1">−</span>
+            </div>
+            <p style="margin-top:12px;font-size:15.5px;line-height:1.6;color:#38557A;max-width:660px">Ab 10 Mio. € Jahresumsatz aus Pauschalreisen und verbundenen Reiseleistungen ist die Absicherung über den Deutschen Reisesicherungsfonds vorgeschrieben. Darunter können Sie zwischen Versicherer und Fonds wählen. Wir prüfen Ihre Zahlen und sagen Ihnen, welcher Weg tragfähig ist.</p>
+          </div>
+          <div style="border-bottom:1px solid #D6E4F0;padding:20px 0;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
+            <h3 style="font-size:17.5px;font-weight:600;line-height:1.35">Welche Unterlagen brauchen Sie für die Risikoprüfung?</h3>
+            <span style="color:#0F5AA6;font-size:20px;line-height:1">+</span>
+          </div>
+          <div style="border-bottom:1px solid #D6E4F0;padding:20px 0;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
+            <h3 style="font-size:17.5px;font-weight:600;line-height:1.35">Kann ich Sicherungsscheine rückwirkend für laufende Buchungen ausstellen?</h3>
+            <span style="color:#0F5AA6;font-size:20px;line-height:1">+</span>
+          </div>
+          <div style="border-bottom:1px solid #D6E4F0;padding:20px 0;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
+            <h3 style="font-size:17.5px;font-weight:600;line-height:1.35">Gilt die Deckung auch für Veranstalter mit Sitz außerhalb Deutschlands?</h3>
+            <span style="color:#0F5AA6;font-size:20px;line-height:1">+</span>
+          </div>
+          <div style="border-bottom:1px solid #D6E4F0;padding:20px 0;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
+            <h3 style="font-size:17.5px;font-weight:600;line-height:1.35">Wie hoch ist der Selbstbehalt im Insolvenzfall?</h3>
+            <span style="color:#0F5AA6;font-size:20px;line-height:1">+</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="background:#EAF4FB;border:1px solid #D6E4F0;border-radius:8px;padding:26px">
+          <h3 style="font-size:18px;font-weight:600">Downloads</h3>
+          <p style="margin-top:8px;font-size:14px;line-height:1.5;color:#5B7391">Antragsunterlagen und Bedingungswerke, Stand 01/2026.</p>
+          <div style="margin-top:20px;display:flex;flex-direction:column;gap:1px;background:#D6E4F0;border:1px solid #D6E4F0;border-radius:6px;overflow:hidden">
+            <a href="#" style="background:#fff;padding:14px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline" style-hover="background:#F7FBFE;text-decoration:none">
+              <span style="font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59">Antrag Insolvenzabsicherung</span><span style="font:400 12px ui-monospace,Menlo,monospace;color:#5B7391">PDF · 240 KB</span>
+            </a>
+            <a href="#" style="background:#fff;padding:14px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline" style-hover="background:#F7FBFE;text-decoration:none">
+              <span style="font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59">AVB 2026-01</span><span style="font:400 12px ui-monospace,Menlo,monospace;color:#5B7391">PDF · 480 KB</span>
+            </a>
+            <a href="#" style="background:#fff;padding:14px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline" style-hover="background:#F7FBFE;text-decoration:none">
+              <span style="font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59">Muster Reisesicherungsschein</span><span style="font:400 12px ui-monospace,Menlo,monospace;color:#5B7391">PDF · 96 KB</span>
+            </a>
+            <a href="#" style="background:#fff;padding:14px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline" style-hover="background:#F7FBFE;text-decoration:none">
+              <span style="font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59">Checkliste Unterlagen</span><span style="font:400 12px ui-monospace,Menlo,monospace;color:#5B7391">PDF · 88 KB</span>
+            </a>
+            <a href="#" style="background:#fff;padding:14px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline" style-hover="background:#F7FBFE;text-decoration:none">
+              <span style="font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59">Schadenmeldung Formular</span><span style="font:400 12px ui-monospace,Menlo,monospace;color:#5B7391">PDF · 120 KB</span>
+            </a>
+          </div>
+          <a href="#" style="display:flex;align-items:center;justify-content:center;height:46px;margin-top:18px;background:#fff;border:1px solid #0B2E59;border-radius:6px;font:600 14.5px 'Libre Franklin',sans-serif;color:#0B2E59" style-hover="background:#0B2E59;color:#fff;text-decoration:none">Zum Downloadcenter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:70px 48px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:30px">
+        <div>
+          <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#0F5AA6">Ihre Ansprechpartner</div>
+          <h2 style="margin-top:14px;font-size:30px;line-height:1.22;font-weight:700">Kundenbetreuung Reiseveranstalter</h2>
+        </div>
+        <a href="#" style="font:600 14.5px 'Libre Franklin',sans-serif">Gesamtes Team</a>
+      </div>
+      <div style="margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px;display:flex;gap:18px;align-items:flex-start">
+          <div style="width:76px;height:76px;flex:none;border:1px solid #D6E4F0;border-radius:6px;background:repeating-linear-gradient(135deg,#F2F7FC 0 6px,#E7F0F8 6px 12px);display:flex;align-items:center;justify-content:center;font:400 9px ui-monospace,Menlo,monospace;color:#8AA2BC;text-align:center">Porträt</div>
+          <div>
+            <h3 style="font-size:17px;font-weight:600;line-height:1.3">Dr. Annegret Vollmer</h3>
+            <div style="margin-top:4px;font-size:14px;color:#5B7391;line-height:1.45">Leitung Underwriting Insolvenzabsicherung</div>
+            <div style="margin-top:14px;font-size:14px;line-height:1.7"><a href="#">+49 30 8847 2118</a><br><a href="#">a.vollmer@tsc-versicherung.de</a></div>
+            <div style="margin-top:10px;font-size:13px;color:#5B7391">Deutsch · Englisch</div>
+          </div>
+        </div>
+        <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px;display:flex;gap:18px;align-items:flex-start">
+          <div style="width:76px;height:76px;flex:none;border:1px solid #D6E4F0;border-radius:6px;background:repeating-linear-gradient(135deg,#F2F7FC 0 6px,#E7F0F8 6px 12px);display:flex;align-items:center;justify-content:center;font:400 9px ui-monospace,Menlo,monospace;color:#8AA2BC;text-align:center">Porträt</div>
+          <div>
+            <h3 style="font-size:17px;font-weight:600;line-height:1.3">Serkan Yıldırım</h3>
+            <div style="margin-top:4px;font-size:14px;color:#5B7391;line-height:1.45">Kundenbetreuung Incoming &amp; Gruppenreisen</div>
+            <div style="margin-top:14px;font-size:14px;line-height:1.7"><a href="#">+49 30 8847 2124</a><br><a href="#">s.yildirim@tsc-versicherung.de</a></div>
+            <div style="margin-top:10px;font-size:13px;color:#5B7391">Deutsch · Türkisch · Englisch</div>
+          </div>
+        </div>
+        <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px;display:flex;gap:18px;align-items:flex-start">
+          <div style="width:76px;height:76px;flex:none;border:1px solid #D6E4F0;border-radius:6px;background:repeating-linear-gradient(135deg,#F2F7FC 0 6px,#E7F0F8 6px 12px);display:flex;align-items:center;justify-content:center;font:400 9px ui-monospace,Menlo,monospace;color:#8AA2BC;text-align:center">Porträt</div>
+          <div>
+            <h3 style="font-size:17px;font-weight:600;line-height:1.3">Jonas Peitsch</h3>
+            <div style="margin-top:4px;font-size:14px;color:#5B7391;line-height:1.45">Schadenabwicklung &amp; Portalbetrieb</div>
+            <div style="margin-top:14px;font-size:14px;line-height:1.7"><a href="#">+49 30 8847 2131</a><br><a href="#">j.peitsch@tsc-versicherung.de</a></div>
+            <div style="margin-top:10px;font-size:13px;color:#5B7391">Deutsch · Englisch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#EAF4FB;border-bottom:1px solid #D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:60px 48px;display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start">
+      <div>
+        <h2 style="font-size:24px;font-weight:600;line-height:1.25">Aktuelles</h2>
+        <p style="margin-top:10px;font-size:14.5px;line-height:1.55;color:#5B7391">Gesetzesänderungen und Hinweise zur Absicherungspflicht.</p>
+        <a href="#" style="display:inline-block;margin-top:14px;font:600 14.5px 'Libre Franklin',sans-serif">Alle Meldungen</a>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D6E4F0;align-items:baseline" style-hover="text-decoration:none">
+          <span style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">04.09.2026</span>
+          <span><span style="font:600 17px 'Libre Franklin',sans-serif;color:#0B2E59">Anpassung der Umsatzschwelle zum Reisesicherungsfonds ab 2027</span><span style="display:block;margin-top:6px;font-size:14.5px;line-height:1.55;color:#38557A">Der Referentenentwurf sieht eine Absenkung auf 8 Mio. € vor. Was das für Ihre Police bedeutet.</span></span>
+        </a>
+        <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D6E4F0;align-items:baseline" style-hover="text-decoration:none">
+          <span style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">21.07.2026</span>
+          <span><span style="font:600 17px 'Libre Franklin',sans-serif;color:#0B2E59">Serienbelege jetzt auch über API</span><span style="display:block;margin-top:6px;font-size:14.5px;line-height:1.55;color:#38557A">Sicherungsscheine direkt aus Ihrem Buchungssystem ausstellen — Dokumentation im Maklerportal.</span></span>
+        </a>
+        <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D6E4F0;border-bottom:1px solid #D6E4F0;align-items:baseline" style-hover="text-decoration:none">
+          <span style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">12.05.2026</span>
+          <span><span style="font:600 17px 'Libre Franklin',sans-serif;color:#0B2E59">BGH zur Haftung bei fehlendem Sicherungsschein</span><span style="display:block;margin-top:6px;font-size:14.5px;line-height:1.55;color:#38557A">Urteilsbesprechung und praktische Folgen für Veranstalter unterhalb der Fondsschwelle.</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#0B2E59;color:#fff">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:48px">
+      <div>
+        <h2 style="font-size:28px;line-height:1.25;font-weight:700;color:#fff;max-width:620px">Prüfung anfragen — Antwort innerhalb eines Werktages</h2>
+        <p style="margin-top:10px;font-size:16px;line-height:1.55;color:#BFD6EA;max-width:560px">Sie erhalten eine Einschätzung zur Deckung und die Liste der benötigten Unterlagen.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex:none">
+        <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;background:#fff;color:#0B2E59;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#EAF4FB;text-decoration:none">Angebot anfordern</a>
+        <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;border:1px solid #7FB0DC;color:#fff;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#13406F;color:#fff;text-decoration:none">+49 30 8847 2100</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#082343;color:#BFD6EA;font-size:14.5px">
+    <div style="max-width:1200px;margin:0 auto;padding:52px 48px 30px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:44px">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:32px;height:32px;border:2px solid #fff;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif;color:#fff">TSC</div>
+          <span style="font:700 15px 'Libre Franklin',sans-serif;color:#fff;letter-spacing:.02em">TSC VERSICHERUNG</span>
+        </div>
+        <p style="margin-top:16px;line-height:1.65">TSC Versicherung AG<br>Kurfürstendamm 214<br>10719 Berlin</p>
+        <p style="margin-top:14px;line-height:1.65">Sitz Berlin · HRB 184 226 B<br>BaFin-Register 5100-VU</p>
+      </div>
+      <div>
+        <div style="font:600 13px 'Source Sans 3',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7FB0DC">Produkte</div>
+        <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
+          <a href="#" style="color:#BFD6EA">Insolvenzversicherung</a>
+          <a href="#" style="color:#BFD6EA">Reisesicherungsschein</a>
+          <a href="#" style="color:#BFD6EA">Reiseversicherung Pakete</a>
+          <a href="#" style="color:#BFD6EA">Gruppen- &amp; Incoming</a>
+        </div>
+      </div>
+      <div>
+        <div style="font:600 13px 'Source Sans 3',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7FB0DC">Service</div>
+        <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
+          <a href="#" style="color:#BFD6EA">Maklerportal</a>
+          <a href="#" style="color:#BFD6EA">Downloadcenter</a>
+          <a href="#" style="color:#BFD6EA">Schadenmeldung</a>
+          <a href="#" style="color:#BFD6EA">Häufige Fragen</a>
+        </div>
+      </div>
+      <div>
+        <div style="font:600 13px 'Source Sans 3',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7FB0DC">Unternehmen</div>
+        <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
+          <a href="#" style="color:#BFD6EA">Über TSC</a>
+          <a href="#" style="color:#BFD6EA">Aktuelles</a>
+          <a href="#" style="color:#BFD6EA">Karriere</a>
+          <a href="#" style="color:#BFD6EA">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:18px 48px 44px;border-top:1px solid #13406F;display:flex;justify-content:space-between;gap:30px;font-size:13.5px">
+      <span>© 2026 TSC Versicherung AG</span>
+      <span style="display:flex;gap:22px"><a href="#" style="color:#BFD6EA">Impressum</a><a href="#" style="color:#BFD6EA">Datenschutz</a><a href="#" style="color:#BFD6EA">Erstinformation</a><a href="#" style="color:#BFD6EA">Beschwerdemanagement</a></span>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:32px;padding:16px 0 80px;width:max-content;margin:0 auto">
+
+<div style="width:1200px">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0B2E59;color:#fff;border-radius:4px">2</span>
+<span style="font:600 13px 'Libre Franklin',sans-serif">Hero — Alternativen</span>
+<span style="font:400 12px 'Source Sans 3',sans-serif;color:#5B7391">Drei Richtungen, ergänzend zu 1</span>
+</div>
+</div>
+
+<div style="width:1200px">
+<div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">2A · Dunkler Vollflächen-Hero, Fakten als Leiste</div>
+<div data-screen-label="Hero 2A" style="background:#0B2E59;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden;color:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 48px;height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #28527E">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border:2px solid #fff;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif">TSC</div>
+      <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;font:600 14px 'Libre Franklin',sans-serif;color:#BFD6EA">
+      <a href="#" style="color:#fff">Insolvenzversicherung</a><a href="#" style="color:#BFD6EA">Reiseversicherung</a><a href="#" style="color:#BFD6EA">Downloads</a><a href="#" style="color:#BFD6EA">Unternehmen</a>
+      <a href="#" style="display:flex;align-items:center;height:46px;padding:0 18px;background:#0F5AA6;color:#fff;border-radius:6px" style-hover="background:#fff;color:#0B2E59;text-decoration:none">Angebot anfordern</a>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:84px 48px 70px">
+    <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#7FB0DC">§ 651r BGB · Absicherungspflicht</div>
+    <h1 style="margin-top:20px;font-size:54px;line-height:1.1;font-weight:700;letter-spacing:-.015em;max-width:840px;color:#fff">Kundengeldabsicherung für Reiseveranstalter.</h1>
+    <p style="margin-top:22px;font-size:19px;line-height:1.55;color:#BFD6EA;max-width:620px">Reisesicherungsschein, Risikoprüfung und Serienbelege aus einer Hand — für Veranstalter bis 10 Mio. € Jahresumsatz.</p>
+    <div style="display:flex;gap:14px;margin-top:34px">
+      <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;background:#fff;color:#0B2E59;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#EAF4FB;text-decoration:none">Angebot anfordern</a>
+      <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;border:1px solid #7FB0DC;color:#fff;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#13406F;color:#fff;text-decoration:none">Ablauf ansehen</a>
+    </div>
+  </div>
+  <div style="border-top:1px solid #28527E">
+    <div style="max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:repeat(4,1fr)">
+      <div style="padding:26px 24px 28px 0"><div style="font:700 24px 'Libre Franklin',sans-serif;color:#fff">3 Werktage</div><div style="margin-top:6px;font-size:14px;color:#BFD6EA">bis zum Sicherungsschein</div></div>
+      <div style="padding:26px 24px 28px;border-left:1px solid #28527E"><div style="font:700 24px 'Libre Franklin',sans-serif;color:#fff">1.400+</div><div style="margin-top:6px;font-size:14px;color:#BFD6EA">abgesicherte Veranstalter</div></div>
+      <div style="padding:26px 24px 28px;border-left:1px solid #28527E"><div style="font:700 24px 'Libre Franklin',sans-serif;color:#fff">10 Mio. €</div><div style="margin-top:6px;font-size:14px;color:#BFD6EA">Deckung je Versicherungsjahr</div></div>
+      <div style="padding:26px 0 28px 24px;border-left:1px solid #28527E"><div style="font:700 24px 'Libre Franklin',sans-serif;color:#fff">seit 1986</div><div style="margin-top:6px;font-size:14px;color:#BFD6EA">BaFin-beaufsichtigt</div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="width:1200px">
+<div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">2B · Nüchtern, Dokument als Beweis</div>
+<div data-screen-label="Hero 2B" style="background:#fff;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:0 48px;height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #D6E4F0">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif">TSC</div>
+      <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;font:600 14px 'Libre Franklin',sans-serif;color:#0B2E59">
+      <a href="#" style="color:#0B2E59">Insolvenzversicherung</a><a href="#" style="color:#0B2E59">Reiseversicherung</a><a href="#" style="color:#0B2E59">Downloads</a><a href="#" style="color:#0B2E59">Unternehmen</a>
+      <a href="#" style="display:flex;align-items:center;height:46px;padding:0 18px;background:#0F5AA6;color:#fff;border-radius:6px" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 460px">
+    <div style="padding:72px 56px 72px 48px;max-width:700px">
+      <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#0F5AA6">Für Reiseveranstalter in Deutschland</div>
+      <h1 style="margin-top:18px;font-size:46px;line-height:1.14;font-weight:700;letter-spacing:-.01em;max-width:560px">Der Reisesicherungsschein, den Ihre Kunden vor der ersten Zahlung sehen müssen.</h1>
+      <p style="margin-top:20px;font-size:18px;line-height:1.6;color:#38557A;max-width:520px">Wir übernehmen Risikoprüfung, Police und Ausstellung. Sie verkaufen weiter, ohne Haftungslücke.</p>
+      <div style="margin-top:30px;display:flex;flex-direction:column;gap:12px;font-size:16px;color:#0B2E59">
+        <div style="display:flex;gap:12px;align-items:baseline"><span style="color:#0F5AA6;font-weight:700">—</span><span>Deckung ab 1 Mio. €, Prämie ab 0,54 % vom Umsatz</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline"><span style="color:#0F5AA6;font-weight:700">—</span><span>Serienbelege und Nachdruck im Maklerportal</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline"><span style="color:#0F5AA6;font-weight:700">—</span><span>Benannter Kundenbetreuer, deutsch- und türkischsprachig</span></div>
+      </div>
+      <div style="display:flex;gap:14px;margin-top:34px">
+        <a href="#" style="display:flex;align-items:center;height:52px;padding:0 26px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+        <a href="#" style="display:flex;align-items:center;height:52px;padding:0 24px;color:#0B2E59;border:1px solid #0B2E59;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif" style-hover="background:#EAF4FB;text-decoration:none">Unterlagen-Checkliste</a>
+      </div>
+    </div>
+    <div style="background:#EAF4FB;border-left:1px solid #D6E4F0;padding:56px 48px;display:flex;align-items:center">
+      <div style="width:100%;background:#fff;border:1px solid #D6E4F0;border-radius:6px;padding:28px 26px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #D6E4F0;padding-bottom:14px">
+          <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">REISESICHERUNGSSCHEIN</span>
+          <span style="font:400 11.5px ui-monospace,Menlo,monospace;color:#5B7391">Nr. 2026-04418</span>
+        </div>
+        <div style="margin-top:18px;display:flex;flex-direction:column;gap:14px;font-size:14px">
+          <div><div style="color:#5B7391;font-size:12.5px">Versicherungsnehmer</div><div style="margin-top:3px;font-weight:600">Alpenlust Reisen GmbH</div></div>
+          <div><div style="color:#5B7391;font-size:12.5px">Absicherung gemäß</div><div style="margin-top:3px;font-weight:600">§ 651r Abs. 3 BGB</div></div>
+          <div><div style="color:#5B7391;font-size:12.5px">Deckungssumme</div><div style="margin-top:3px;font-weight:600">5.000.000 €</div></div>
+          <div><div style="color:#5B7391;font-size:12.5px">Gültig</div><div style="margin-top:3px;font-weight:600">01.01.2026 – 31.12.2026</div></div>
+        </div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid #D6E4F0;display:flex;justify-content:space-between;align-items:center">
+          <span style="font:400 11.5px ui-monospace,Menlo,monospace;color:#5B7391">Muster · nicht rechtsverbindlich</span>
+          <span style="height:28px;padding:0 10px;border:1px solid #0F5AA6;border-radius:4px;display:flex;align-items:center;font:600 11.5px 'Source Sans 3',sans-serif;color:#0F5AA6;letter-spacing:.04em">GEPRÜFT</span><!--endhero2b-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div style="width:1200px">
+<div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">2C · Prüfpfad direkt im Hero</div>
+<div data-screen-label="Hero 2C" style="background:#fff;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:0 48px;height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #D6E4F0">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif">TSC</div>
+      <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;font:600 14px 'Libre Franklin',sans-serif;color:#0B2E59">
+      <a href="#" style="color:#0B2E59">Insolvenzversicherung</a><a href="#" style="color:#0B2E59">Reiseversicherung</a><a href="#" style="color:#0B2E59">Downloads</a><a href="#" style="color:#0B2E59">Unternehmen</a>
+      <a href="#" style="display:flex;align-items:center;height:46px;padding:0 18px;background:#0F5AA6;color:#fff;border-radius:6px" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:70px 48px 0">
+    <h1 style="font-size:44px;line-height:1.15;font-weight:700;letter-spacing:-.01em;max-width:700px">Sind Sie nach § 651r BGB absicherungspflichtig? Drei Angaben genügen.</h1>
+    <p style="margin-top:18px;font-size:18px;line-height:1.6;color:#38557A;max-width:600px">Wir sagen Ihnen, ob Versicherung oder Reisesicherungsfonds greift — und was die Deckung kostet.</p>
+    <p style="margin-top:12px;font-size:15px;line-height:1.5;color:#5B7391;max-width:560px">Drei Angaben: Jahresumsatz, Reiseart, Firmensitz.</p>
+  </div>
+  <div style="max-width:1200px;margin:38px auto 0;padding:0 48px 64px">
+    <div style="border:1px solid #D6E4F0;border-radius:8px;display:grid;grid-template-columns:1fr 1fr 1fr 220px;overflow:hidden">
+      <div style="padding:20px 22px;border-right:1px solid #D6E4F0">
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5B7391">01 Jahresumsatz</div>
+        <div style="margin-top:10px;display:flex;align-items:center;height:46px;border:1px solid #D6E4F0;border-radius:6px;padding:0 12px;justify-content:space-between;font-size:15px"><span>1–5 Mio. €</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+      </div>
+      <div style="padding:20px 22px;border-right:1px solid #D6E4F0">
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5B7391">02 Reiseart</div>
+        <div style="margin-top:10px;display:flex;align-items:center;height:46px;border:1px solid #D6E4F0;border-radius:6px;padding:0 12px;justify-content:space-between;font-size:15px"><span>Pauschalreisen</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+      </div>
+      <div style="padding:20px 22px;border-right:1px solid #D6E4F0">
+        <div style="font:600 12px 'Source Sans 3',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5B7391">03 Firmensitz</div>
+        <div style="margin-top:10px;display:flex;align-items:center;height:46px;border:1px solid #D6E4F0;border-radius:6px;padding:0 12px;justify-content:space-between;font-size:15px"><span>Deutschland</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+      </div>
+      <div style="background:#EAF4FB;padding:20px 22px;display:flex;align-items:flex-end">
+        <div style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 15px 'Libre Franklin',sans-serif">Ergebnis anzeigen</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:26px;font-size:14px;color:#5B7391"><span>Ergebnis in ca. 30 Sekunden</span><span>·</span><span>Keine Registrierung</span><span>·</span><span>DSGVO-konform</span></div>
+  </div>
+</div>
+</div>
+
+<div style="width:1200px;display:flex;align-items:baseline;gap:10px;padding-top:24px">
+<span style="font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0B2E59;color:#fff;border-radius:4px">3</span>
+<span style="font:600 13px 'Libre Franklin',sans-serif">Produktseite — Insolvenzversicherung</span>
+</div>
+
+<div data-screen-label="Produktseite" style="width:1200px;background:#fff;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+  <div style="border-bottom:1px solid #D6E4F0;padding:0 48px;height:70px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif">TSC</div>
+      <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;font:600 14px 'Libre Franklin',sans-serif;color:#0B2E59">
+      <a href="#" style="color:#0B2E59;border-bottom:2px solid #0F5AA6;padding-bottom:3px">Insolvenzversicherung</a><a href="#" style="color:#0B2E59">Reiseversicherung</a><a href="#" style="color:#0B2E59">Downloads</a><a href="#" style="color:#0B2E59">Unternehmen</a>
+      <a href="#" style="display:flex;align-items:center;height:46px;padding:0 18px;background:#0F5AA6;color:#fff;border-radius:6px" style-hover="background:#0B2E59;text-decoration:none">Angebot anfordern</a>
+    </div>
+  </div>
+  <div style="background:#EAF4FB;border-bottom:1px solid #D6E4F0;padding:14px 48px;font-size:13.5px;color:#5B7391">
+    <a href="#">Start</a> <span style="padding:0 6px">/</span> <a href="#">Produkte</a> <span style="padding:0 6px">/</span> <span style="color:#0B2E59">Insolvenzversicherung</span>
+  </div>
+  <div style="padding:60px 48px 0;max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 300px;gap:64px;align-items:start">
+      <div>
+        <h1 style="font-size:40px;line-height:1.16;font-weight:700;letter-spacing:-.01em;max-width:620px">Insolvenzversicherung mit Reisesicherungsschein</h1>
+        <p style="margin-top:20px;font-size:18px;line-height:1.6;color:#38557A;max-width:640px">Die Police sichert Kundengelder und Rückreisekosten ab und erfüllt die Nachweispflicht nach § 651r Abs. 3 BGB. Für Veranstalter mit Jahresumsatz bis 10 Mio. € aus Pauschalreisen und verbundenen Reiseleistungen.</p>
+        <div style="margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+          <div style="border:1px solid #D6E4F0;border-radius:8px;padding:26px">
+            <h3 style="font-size:18px;font-weight:600">Versichert ist</h3>
+            <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:15.5px;line-height:1.5">
+              <div style="display:flex;gap:10px"><span style="color:#0F5AA6;font-weight:700">✓</span><span>Erstattung geleisteter Zahlungen der Reisenden</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#0F5AA6;font-weight:700">✓</span><span>Notwendige Aufwendungen für die Rückreise</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#0F5AA6;font-weight:700">✓</span><span>Unterbringung bis zur Rückreise</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#0F5AA6;font-weight:700">✓</span><span>Verbundene Reiseleistungen nach § 651w BGB</span></div>
+            </div>
+          </div>
+          <div style="border:1px solid #D6E4F0;border-radius:8px;padding:26px;background:#F7FBFE">
+            <h3 style="font-size:18px;font-weight:600">Nicht versichert ist</h3>
+            <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:15.5px;line-height:1.5;color:#38557A">
+              <div style="display:flex;gap:10px"><span style="color:#5B7391;font-weight:700">—</span><span>Einzelleistungen ohne Pauschalreisecharakter</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#5B7391;font-weight:700">—</span><span>Forderungen von Leistungsträgern und Agenturen</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#5B7391;font-weight:700">—</span><span>Vermittelte Fremdveranstalterreisen</span></div>
+              <div style="display:flex;gap:10px"><span style="color:#5B7391;font-weight:700">—</span><span>Bußgelder und Vertragsstrafen</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+        <div style="background:#0B2E59;color:#fff;padding:18px 22px;font:600 15px 'Libre Franklin',sans-serif">Auf dieser Seite</div>
+        <div style="display:flex;flex-direction:column">
+          <a href="#" style="padding:13px 22px;border-bottom:1px solid #D6E4F0;font-size:14.5px;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Leistungsumfang</a>
+          <a href="#" style="padding:13px 22px;border-bottom:1px solid #D6E4F0;font-size:14.5px;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Deckungssummen &amp; Prämie</a>
+          <a href="#" style="padding:13px 22px;border-bottom:1px solid #D6E4F0;font-size:14.5px;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Antragsunterlagen</a>
+          <a href="#" style="padding:13px 22px;border-bottom:1px solid #D6E4F0;font-size:14.5px;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Ausstellung der Scheine</a>
+          <a href="#" style="padding:13px 22px;font-size:14.5px;color:#0B2E59" style-hover="background:#EAF4FB;text-decoration:none">Schadenfall</a>
+        </div>
+        <div style="border-top:1px solid #D6E4F0;padding:22px;background:#EAF4FB">
+          <div style="font-size:14px;line-height:1.5;color:#38557A">Fragen zur Deckung?</div>
+          <div style="margin-top:8px;font:600 16px 'Libre Franklin',sans-serif">+49 30 8847 2118</div>
+          <div style="margin-top:12px;display:flex;align-items:center;justify-content:center;height:46px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 15px 'Libre Franklin',sans-serif">Rückruf anfordern</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:56px 48px 64px">
+    <h2 style="font-size:26px;font-weight:600">Antragsunterlagen</h2>
+    <div style="margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#D6E4F0;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+      <div style="background:#fff;padding:22px 24px"><div style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">01</div><div style="margin-top:10px;font:600 16px 'Libre Franklin',sans-serif">Jahresabschluss</div><div style="margin-top:6px;font-size:14.5px;line-height:1.5;color:#38557A">Letzte zwei Geschäftsjahre, inkl. Anhang</div></div>
+      <div style="background:#fff;padding:22px 24px"><div style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">02</div><div style="margin-top:10px;font:600 16px 'Libre Franklin',sans-serif">Umsatzplanung</div><div style="margin-top:6px;font-size:14.5px;line-height:1.5;color:#38557A">Laufendes Jahr, aufgeteilt nach Reiseart</div></div>
+      <div style="background:#fff;padding:22px 24px"><div style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">03</div><div style="margin-top:10px;font:600 16px 'Libre Franklin',sans-serif">Gewerbenachweis</div><div style="margin-top:6px;font-size:14.5px;line-height:1.5;color:#38557A">Handelsregisterauszug, nicht älter als 3 Monate</div></div>
+      <div style="background:#fff;padding:22px 24px"><div style="font:400 13px ui-monospace,Menlo,monospace;color:#5B7391">04</div><div style="margin-top:10px;font:600 16px 'Libre Franklin',sans-serif">Vorauszahlungsquote</div><div style="margin-top:6px;font-size:14.5px;line-height:1.5;color:#38557A">Anzahlungspraxis und Zahlungsziele</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1200px;display:flex;align-items:baseline;gap:10px;padding-top:24px">
+<span style="font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0B2E59;color:#fff;border-radius:4px">4</span>
+<span style="font:600 13px 'Libre Franklin',sans-serif">Angebot anfordern — Formular</span>
+</div>
+
+<div data-screen-label="Angebotsformular" style="width:1200px;background:#fff;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+  <div style="border-bottom:1px solid #D6E4F0;padding:0 48px;height:70px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 13px 'Libre Franklin',sans-serif">TSC</div>
+      <span style="font:700 15px 'Libre Franklin',sans-serif;letter-spacing:.02em;white-space:nowrap">TSC VERSICHERUNG</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;font:600 14px 'Libre Franklin',sans-serif;color:#0B2E59">
+      <a href="#" style="color:#0B2E59">Insolvenzversicherung</a><a href="#" style="color:#0B2E59">Reiseversicherung</a><a href="#" style="color:#0B2E59">Downloads</a><a href="#" style="color:#0B2E59">Unternehmen</a>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:56px 48px 72px;display:grid;grid-template-columns:1fr 340px;gap:64px;align-items:start">
+    <div>
+      <h1 style="font-size:36px;line-height:1.18;font-weight:700;max-width:560px">Angebot für die Insolvenzabsicherung anfordern</h1>
+      <p style="margin-top:16px;font-size:17px;line-height:1.6;color:#38557A;max-width:600px">Pflichtfelder sind mit * markiert. Unterlagen können Sie später nachreichen.</p>
+      <div style="margin-top:34px;display:flex;align-items:center;gap:0;border:1px solid #D6E4F0;border-radius:8px;overflow:hidden">
+        <div style="flex:1;padding:14px 20px;background:#EAF4FB;border-right:1px solid #D6E4F0;font:600 14px 'Libre Franklin',sans-serif;color:#0B2E59">1 · Unternehmen</div>
+        <div style="flex:1;padding:14px 20px;border-right:1px solid #D6E4F0;font:600 14px 'Libre Franklin',sans-serif;color:#5B7391">2 · Reisegeschäft</div>
+        <div style="flex:1;padding:14px 20px;font:600 14px 'Libre Franklin',sans-serif;color:#5B7391">3 · Kontakt</div>
+      </div>
+      <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <div style="grid-column:span 2">
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Firmenname *</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:15px;color:#0B2E59">Alpenlust Reisen GmbH</div>
+        </div>
+        <div>
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Rechtsform *</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:15px"><span>GmbH</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+        </div>
+        <div>
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Handelsregisternummer</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:15px;color:#8AA2BC">HRB 000 000 B</div>
+        </div>
+        <div style="grid-column:span 2">
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Straße, PLZ, Ort *</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:15px;color:#8AA2BC">Straße und Hausnummer</div>
+        </div>
+        <div>
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Jahresumsatz Pauschalreisen *</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:15px"><span>1–5 Mio. €</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+        </div>
+        <div>
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Gewünschter Versicherungsbeginn *</label>
+          <div style="margin-top:6px;height:46px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:15px">01.01.2027</div>
+        </div>
+        <div style="grid-column:span 2">
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Reisearten *</label>
+          <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:10px">
+            <span style="height:40px;padding:0 14px;border:1px solid #0F5AA6;background:#EAF4FB;border-radius:6px;display:flex;align-items:center;font-size:14.5px;color:#0B2E59">Pauschalreisen</span>
+            <span style="height:40px;padding:0 14px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font-size:14.5px;color:#38557A">Gruppenreisen</span>
+            <span style="height:40px;padding:0 14px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font-size:14.5px;color:#38557A">Incoming</span>
+            <span style="height:40px;padding:0 14px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font-size:14.5px;color:#38557A">Studienreisen</span>
+            <span style="height:40px;padding:0 14px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;font-size:14.5px;color:#38557A">Verbundene Reiseleistungen</span>
+          </div>
+        </div>
+        <div style="grid-column:span 2">
+          <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Anmerkungen</label>
+          <div style="margin-top:6px;height:110px;border:1px solid #D6E4F0;border-radius:6px;padding:12px;font-size:15px;color:#8AA2BC">Besonderheiten zur Bilanz, Vorversicherer, laufende Schäden …</div>
+        </div>
+        <div style="grid-column:span 2;display:flex;gap:12px;align-items:flex-start;margin-top:4px">
+          <span style="width:20px;height:20px;flex:none;border:1px solid #0B2E59;border-radius:4px;margin-top:2px"></span>
+          <span style="font-size:14px;line-height:1.55;color:#38557A">Ich habe die <a href="#">Datenschutzhinweise</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Angebotserstellung einverstanden. *</span>
+        </div>
+      </div>
+      <div style="margin-top:30px;display:flex;gap:14px;align-items:center">
+        <div style="display:flex;align-items:center;height:52px;padding:0 28px;background:#0F5AA6;color:#fff;border-radius:6px;font:600 16px 'Libre Franklin',sans-serif">Anfrage senden</div>
+        <span style="font-size:14px;color:#5B7391">Antwort innerhalb eines Werktages</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px">
+        <h3 style="font-size:17px;font-weight:600">Was danach passiert</h3>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:14px;font-size:14.5px;line-height:1.55;color:#38557A">
+          <div style="display:flex;gap:12px"><span style="font:400 13px ui-monospace,Menlo,monospace;color:#0F5AA6">01</span><span>Eingangsbestätigung mit Aktenzeichen</span></div>
+          <div style="display:flex;gap:12px"><span style="font:400 13px ui-monospace,Menlo,monospace;color:#0F5AA6">02</span><span>Unterlagenliste von Ihrem Betreuer</span></div>
+          <div style="display:flex;gap:12px"><span style="font:400 13px ui-monospace,Menlo,monospace;color:#0F5AA6">03</span><span>Risikoprüfung, Rückfragen gebündelt</span></div>
+          <div style="display:flex;gap:12px"><span style="font:400 13px ui-monospace,Menlo,monospace;color:#0F5AA6">04</span><span>Verbindliches Angebot per E-Mail</span></div>
+        </div>
+      </div>
+      <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px;background:#EAF4FB">
+        <h3 style="font-size:17px;font-weight:600">Lieber telefonisch?</h3>
+        <p style="margin-top:8px;font-size:14.5px;line-height:1.55;color:#38557A">Mo–Fr 08:30–17:30, deutsch und türkisch.</p>
+        <div style="margin-top:12px;font:600 18px 'Libre Franklin',sans-serif">+49 30 8847 2100</div>
+      </div>
+      <div style="border:1px solid #D6E4F0;border-radius:8px;padding:24px">
+        <h3 style="font-size:17px;font-weight:600">Datensicherheit</h3>
+        <p style="margin-top:8px;font-size:14.5px;line-height:1.55;color:#38557A">Übertragung TLS-verschlüsselt, Speicherung auf Servern in Deutschland. Keine Weitergabe an Dritte außer dem Rückversicherer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1200px;display:flex;align-items:baseline;gap:10px;padding-top:24px">
+<span style="font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0B2E59;color:#fff;border-radius:4px">5</span>
+<span style="font:600 13px 'Libre Franklin',sans-serif">Mobil — eigene Struktur</span>
+<span style="font:400 12px 'Source Sans 3',sans-serif;color:#5B7391">Eigenständig: eine Spalte, feste Aktionsleiste, Tarife als Akkordeon</span>
+</div>
+
+<div style="width:1200px;display:flex;flex-wrap:wrap;gap:40px;justify-content:flex-start">
+
+  <div style="flex:none">
+    <div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">5A · Start</div>
+    <div data-screen-label="Mobil Start" style="width:390px;background:#0B2E59;border-radius:28px;padding:10px;border:1px solid #D6E4F0">
+      <div style="background:#fff;border-radius:20px;overflow:hidden;height:980px;display:flex;flex-direction:column">
+        <div style="height:34px;background:#0B2E59;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px 'Source Sans 3',sans-serif"><span>09:41</span><span>5G · 100%</span></div>
+        <div style="height:60px;border-bottom:1px solid #D6E4F0;display:flex;align-items:center;justify-content:space-between;padding:0 18px;flex:none">
+          <div style="display:flex;align-items:center;gap:9px"><div style="width:30px;height:30px;border:2px solid #0B2E59;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 12px 'Libre Franklin',sans-serif">TSC</div><span style="font:700 13.5px 'Libre Franklin',sans-serif;letter-spacing:.02em">TSC VERSICHERUNG</span></div>
+          <div style="width:46px;height:46px;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:flex-end">
+            <span style="width:22px;height:2px;background:#0B2E59"></span><span style="width:22px;height:2px;background:#0B2E59"></span><span style="width:22px;height:2px;background:#0B2E59"></span>
+          </div>
+        </div>
+        <div style="flex:1;overflow:hidden">
+          <div style="padding:26px 18px 24px">
+            <div style="display:inline-flex;height:28px;align-items:center;padding:0 10px;background:#EAF4FB;border:1px solid #D6E4F0;border-radius:4px;font:600 11.5px 'Source Sans 3',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#0F5AA6">§ 651r BGB</div>
+            <h1 style="margin-top:16px;font-size:30px;line-height:1.18;font-weight:700;letter-spacing:-.01em">Reisesicherungs­schein in 3 Werktagen</h1>
+            <p style="margin-top:14px;font-size:16px;line-height:1.55;color:#38557A">Kundengeld­absicherung für Reise­veranstalter bis 10 Mio. € Umsatz.</p>
+            <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+              <div style="height:52px;background:#0F5AA6;color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 16px 'Libre Franklin',sans-serif">Angebot anfordern</div>
+              <div style="height:52px;border:1px solid #0B2E59;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 16px 'Libre Franklin',sans-serif;color:#0B2E59">Anrufen</div>
+            </div>
+          </div>
+          <div style="background:#EAF4FB;border-top:1px solid #D6E4F0;border-bottom:1px solid #D6E4F0;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="background:#fff;border:1px solid #D6E4F0;border-radius:6px;padding:12px 14px;font:600 13px 'Libre Franklin',sans-serif">BaFin-beaufsichtigt</div>
+            <div style="background:#fff;border:1px solid #D6E4F0;border-radius:6px;padding:12px 14px;font:600 13px 'Libre Franklin',sans-serif">GDV-Mitglied</div>
+            <div style="background:#fff;border:1px solid #D6E4F0;border-radius:6px;padding:12px 14px;font:600 13px 'Libre Franklin',sans-serif">1.400+ Veranstalter</div>
+            <div style="background:#fff;border:1px solid #D6E4F0;border-radius:6px;padding:12px 14px;font:600 13px 'Libre Franklin',sans-serif">seit 1986</div>
+          </div>
+          <div style="padding:24px 18px">
+            <h2 style="font-size:21px;font-weight:700;line-height:1.25">Ablauf</h2>
+            <div style="margin-top:14px;display:flex;flex-direction:column;gap:1px;background:#D6E4F0;border:1px solid #D6E4F0;border-radius:6px;overflow:hidden">
+              <div style="background:#fff;padding:14px 16px;display:flex;gap:12px"><span style="font:400 12px ui-monospace,Menlo,monospace;color:#0F5AA6;padding-top:2px">01</span><span style="font-size:15px;line-height:1.45">Anfrage &amp; Unterlagen<span style="display:block;color:#5B7391;font-size:13.5px">Tag 1</span></span></div>
+              <div style="background:#fff;padding:14px 16px;display:flex;gap:12px"><span style="font:400 12px ui-monospace,Menlo,monospace;color:#0F5AA6;padding-top:2px">02</span><span style="font-size:15px;line-height:1.45">Risikoprüfung<span style="display:block;color:#5B7391;font-size:13.5px">Tag 1–2</span></span></div>
+              <div style="background:#fff;padding:14px 16px;display:flex;gap:12px"><span style="font:400 12px ui-monospace,Menlo,monospace;color:#0F5AA6;padding-top:2px">03</span><span style="font-size:15px;line-height:1.45">Angebot &amp; Police<span style="display:block;color:#5B7391;font-size:13.5px">Tag 2–3</span></span></div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:none;border-top:1px solid #D6E4F0;background:#fff;padding:10px 14px;display:flex;gap:10px">
+          <div style="flex:1;height:50px;background:#0F5AA6;color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 15.5px 'Libre Franklin',sans-serif">Angebot anfordern</div>
+          <div style="width:50px;height:50px;border:1px solid #0B2E59;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 13px 'Libre Franklin',sans-serif;color:#0B2E59">Tel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex:none">
+    <div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">5B · Tarife (Akkordeon statt Tabelle)</div>
+    <div data-screen-label="Mobil Tarife" style="width:390px;background:#0B2E59;border-radius:28px;padding:10px;border:1px solid #D6E4F0">
+      <div style="background:#fff;border-radius:20px;overflow:hidden;height:780px;display:flex;flex-direction:column">
+        <div style="height:34px;background:#0B2E59;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px 'Source Sans 3',sans-serif"><span>09:41</span><span>5G · 100%</span></div>
+        <div style="height:60px;border-bottom:1px solid #D6E4F0;display:flex;align-items:center;gap:12px;padding:0 18px;flex:none">
+          <div style="width:46px;height:46px;display:flex;align-items:center;font:600 22px 'Libre Franklin',sans-serif;color:#0B2E59">‹</div>
+          <span style="font:600 16px 'Libre Franklin',sans-serif">Tarife</span>
+        </div>
+        <div style="flex:1;padding:20px 18px;overflow:hidden">
+          <p style="font-size:15.5px;line-height:1.55;color:#38557A">Wählen Sie Ihre Umsatzklasse. Prämien gelten ohne Schadenhistorie.</p>
+          <div style="margin-top:18px;display:flex;flex-direction:column;gap:12px">
+            <div style="border:1px solid #D6E4F0;border-radius:6px;overflow:hidden">
+              <div style="padding:16px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 16px 'Libre Franklin',sans-serif">Basis · bis 1 Mio. €</span><span style="color:#0F5AA6;font-size:20px">+</span></div>
+            </div>
+            <div style="border:1px solid #0F5AA6;border-radius:6px;overflow:hidden">
+              <div style="padding:16px;background:#EAF4FB;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #D6E4F0"><span style="font:600 16px 'Libre Franklin',sans-serif">Standard · 1–5 Mio. €</span><span style="color:#0F5AA6;font-size:20px">−</span></div>
+              <div style="padding:16px;display:flex;flex-direction:column;gap:12px;font-size:15px">
+                <div style="display:flex;justify-content:space-between;gap:16px"><span style="color:#5B7391">Deckungssumme</span><span style="font-weight:600">5 Mio. €</span></div>
+                <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #D6E4F0;padding-top:12px"><span style="color:#5B7391">Prämie ab</span><span style="font-weight:600">0,54 % v. Umsatz</span></div>
+                <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #D6E4F0;padding-top:12px"><span style="color:#5B7391">Serienbelege</span><span style="font-weight:600">inklusive</span></div>
+                <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #D6E4F0;padding-top:12px"><span style="color:#5B7391">Betreuer</span><span style="font-weight:600">benannt</span></div>
+                <div style="height:48px;margin-top:4px;background:#0F5AA6;color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 15.5px 'Libre Franklin',sans-serif">Diesen Tarif anfragen</div>
+              </div>
+            </div>
+            <div style="border:1px solid #D6E4F0;border-radius:6px;overflow:hidden">
+              <div style="padding:16px;display:flex;justify-content:space-between;align-items:center"><span style="font:600 16px 'Libre Franklin',sans-serif">Premium · 5–10 Mio. €</span><span style="color:#0F5AA6;font-size:20px">+</span></div>
+            </div>
+          </div>
+          <p style="margin-top:18px;font-size:12.5px;line-height:1.5;color:#5B7391">Alle Angaben zzgl. Versicherungsteuer. Maßgeblich sind die AVB 2026-01.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex:none">
+    <div style="font:600 11px ui-monospace,Menlo,monospace;color:#5B7391;margin-bottom:8px">5C · Anfrage, Schritt 1 von 3</div>
+    <div data-screen-label="Mobil Formular" style="width:390px;background:#0B2E59;border-radius:28px;padding:10px;border:1px solid #D6E4F0">
+      <div style="background:#fff;border-radius:20px;overflow:hidden;height:780px;display:flex;flex-direction:column">
+        <div style="height:34px;background:#0B2E59;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px 'Source Sans 3',sans-serif"><span>09:41</span><span>5G · 100%</span></div>
+        <div style="height:60px;border-bottom:1px solid #D6E4F0;display:flex;align-items:center;gap:12px;padding:0 18px;flex:none">
+          <div style="width:46px;height:46px;display:flex;align-items:center;font:600 22px 'Libre Franklin',sans-serif;color:#0B2E59">‹</div>
+          <span style="font:600 16px 'Libre Franklin',sans-serif">Angebot anfordern</span>
+        </div>
+        <div style="flex:none;padding:14px 18px 0">
+          <div style="display:flex;gap:6px">
+            <span style="flex:1;height:4px;background:#0F5AA6;border-radius:2px"></span>
+            <span style="flex:1;height:4px;background:#D6E4F0;border-radius:2px"></span>
+            <span style="flex:1;height:4px;background:#D6E4F0;border-radius:2px"></span>
+          </div>
+          <div style="margin-top:10px;font:600 13px 'Source Sans 3',sans-serif;color:#5B7391">Schritt 1 von 3 · Unternehmen</div>
+        </div>
+        <div style="flex:1;padding:18px;display:flex;flex-direction:column;gap:16px;overflow:hidden">
+          <div>
+            <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Firmenname *</label>
+            <div style="margin-top:6px;height:50px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:16px">Alpenlust Reisen GmbH</div>
+          </div>
+          <div>
+            <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Rechtsform *</label>
+            <div style="margin-top:6px;height:50px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:16px"><span>GmbH</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+          </div>
+          <div>
+            <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Jahresumsatz Pauschalreisen *</label>
+            <div style="margin-top:6px;height:50px;border:1px solid #0F5AA6;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:16px"><span>1–5 Mio. €</span><span style="color:#0F5AA6;font-size:12px">▾</span></div>
+          </div>
+          <div>
+            <label style="display:block;font:600 13.5px 'Source Sans 3',sans-serif">Firmensitz *</label>
+            <div style="margin-top:6px;height:50px;border:1px solid #D6E4F0;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:16px"><span>Deutschland</span><span style="color:#5B7391;font-size:12px">▾</span></div>
+          </div>
+          <p style="font-size:13.5px;line-height:1.5;color:#5B7391">Unterlagen laden Sie später hoch — nach der Eingangsbestätigung.</p>
+        </div>
+        <div style="flex:none;border-top:1px solid #D6E4F0;padding:10px 14px;display:flex;gap:10px">
+          <div style="width:96px;height:50px;border:1px solid #0B2E59;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 15.5px 'Libre Franklin',sans-serif;color:#0B2E59">Zurück</div>
+          <div style="flex:1;height:50px;background:#0F5AA6;color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font:600 15.5px 'Libre Franklin',sans-serif">Weiter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{}"></script>
+
+
+<div id="__claude_design_branding"><style>#__claude_design_branding{position:fixed;right:16px;bottom:16px;z-index:2147483646;display:flex;align-items:center;gap:7px;height:30px;padding:0 5px 0 10px;border-radius:999px;font-family:"Anthropic Sans",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:12.5px;font-weight:400;line-height:1;letter-spacing:normal;text-transform:none;color:#141413;background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:0 0 0 .5px rgba(31,30,29,.14),0 2px 10px rgba(0,0,0,.09)}
+#__claude_design_branding *{box-sizing:border-box;margin:0}
+#__claude_design_branding a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+#__claude_design_branding a:hover span{text-decoration:underline}
+#__claude_design_branding svg{flex:none}
+#__claude_design_branding a svg{color:#D97757}
+#__claude_design_branding button{width:20px;height:20px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:currentColor;opacity:.55;border:0;background:none;cursor:pointer;flex:none;font:inherit;transition:opacity .14s}
+#__claude_design_branding button:hover{opacity:1;background:rgba(127,127,127,.22)}
+@media print{#__claude_design_branding{display:none}}</style><a href="https://claude.com/product/design" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 20 21" fill="none" aria-hidden="true"><path fill="currentColor" d="M9.99902 0C15.5258 0.000170936 19.999 4.50643 19.999 10.0547C19.999 11.7656 19.5863 12.9976 18.7861 13.8203C17.9924 14.6362 16.9465 14.9138 15.9854 15.0078C15.05 15.0993 14.0097 15.0262 13.2549 15.0186C12.8524 15.0145 12.5177 15.0267 12.2441 15.0703C11.9682 15.1144 11.8143 15.1813 11.7305 15.2432C11.4745 15.4322 11.3353 15.7121 11.2656 16.1602C11.2303 16.3875 11.2168 16.6362 11.209 16.9131C11.2017 17.1715 11.1986 17.4893 11.1807 17.7705C11.1469 18.2975 11.0495 19.0865 10.4199 19.5908C9.7846 20.0996 8.88652 20.1057 7.85449 19.877C7.36399 19.7682 6.88652 19.6232 6.42578 19.4453C2.66989 17.9949 0.000187748 14.3414 0 10.0547C0 4.50643 4.47223 0.000171048 9.99902 0ZM9.99902 1.60547C5.36781 1.60564 1.60547 5.38391 1.60547 10.0547C1.60566 13.6582 3.84823 16.7296 7.00391 17.9482C7.39027 18.0974 7.79085 18.2184 8.20215 18.3096C9.1375 18.5169 9.384 18.3633 9.41602 18.3379C9.4524 18.3087 9.54558 18.1915 9.5791 17.668C9.5947 17.4239 9.59473 17.1786 9.60352 16.8672C9.61179 16.5742 9.62831 16.2435 9.67969 15.9131C9.78359 15.2455 10.0474 14.4906 10.7764 13.9521C11.1479 13.6778 11.5842 13.5493 11.9912 13.4844C12.4007 13.4191 12.8434 13.4088 13.2705 13.4131C14.1753 13.4222 15.0071 13.4905 15.8291 13.4102C16.6257 13.3322 17.2249 13.1235 17.6357 12.7012C18.0401 12.2855 18.3935 11.5261 18.3936 10.0547C18.3936 5.38391 14.6302 1.60564 9.99902 1.60547ZM5.11621 9.86719C5.86386 9.91468 6.45486 10.5348 6.45508 11.2939C6.45506 12.0838 5.81519 12.7245 5.02539 12.7246C4.28481 12.7246 3.67573 12.1617 3.60254 11.4404L3.59473 11.2939L3.60156 11.1533C3.66942 10.4596 4.23282 9.91186 4.93359 9.86719H5.11621ZM14.9814 7.19141C15.729 7.23889 16.3199 7.85919 16.3203 8.61816C16.3203 9.40801 15.6804 10.0487 14.8906 10.0488C14.1501 10.0487 13.5409 9.48586 13.4678 8.76465L13.46 8.61816L13.4668 8.47754C13.5348 7.78403 14.0983 7.23618 14.7988 7.19141H14.9814ZM6.4541 4.93457C7.20161 4.9822 7.79275 5.60231 7.79297 6.36133C7.79288 7.151 7.15291 7.7917 6.36328 7.79199C5.62274 7.79199 5.01369 7.22903 4.94043 6.50781L4.93262 6.36133L4.93945 6.2207C5.00731 5.52698 5.5707 4.97922 6.27148 4.93457H6.4541ZM11.3867 3.59668C12.1343 3.64419 12.7253 4.26436 12.7256 5.02344C12.7256 5.81326 12.0857 6.45393 11.2959 6.4541C10.5553 6.4541 9.94622 5.89123 9.87305 5.16992L9.86523 5.02344L9.87207 4.88281C9.93996 4.18912 10.5033 3.64133 11.2041 3.59668H11.3867Z"></path></svg><span>Made with Claude Design</span></a><button type="button" aria-label="Dismiss" onclick="this.parentElement.remove()"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></div></body></html>
