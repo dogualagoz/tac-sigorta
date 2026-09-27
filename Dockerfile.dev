@@ -1,0 +1,20 @@
+# Sadece local geliştirme içindir (hot-reload). Deploy image'ı CLAUDE.md'nin
+# "Deploy: Docker Compose (app + postgres)" maddesine göre adım 10'da ayrıca kurulacak.
+FROM node:25-slim
+
+WORKDIR /app
+
+# better-sqlite3 (bkz. @nuxt/content) bu platform+Node kombinasyonu için hazır
+# binary bulamayıp kaynaktan derliyor — node-gyp için python3/make/g++ gerekli.
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends python3 make g++ \
+  && rm -rf /var/lib/apt/lists/*
+
+# package*.json önce kopyalanır ki bağımlılıklar değişmediği sürece
+# `npm ci` katmanı cache'ten gelsin.
+COPY package.json package-lock.json ./
+RUN npm ci
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

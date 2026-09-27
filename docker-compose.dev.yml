@@ -1,0 +1,25 @@
+# Local geliştirme ortamı — host makinede Node kurulu/doğru sürüm olması
+# gerekmez, her şey container içinde çalışır. Kullanım: `docker compose -f
+# docker-compose.dev.yml up`. Prod/deploy compose dosyası adım 10'da ayrı kurulacak.
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - nuxt_cache:/app/.nuxt
+    environment:
+      - NUXT_PUBLIC_DEV_LOCALE_TR=${NUXT_PUBLIC_DEV_LOCALE_TR:-false}
+      - NUXT_PUBLIC_SITE_URL=${NUXT_PUBLIC_SITE_URL:-}
+      # Docker Desktop'ta (macOS) dosya değişikliği bildirimleri bazen gecikir —
+      # polling ile hot-reload'ın her koşulda çalışmasını garanti eder.
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run dev -- --host 0.0.0.0
+
+volumes:
+  node_modules:
+  nuxt_cache:
