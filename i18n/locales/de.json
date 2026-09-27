@@ -47,6 +47,9 @@
   "a11y": {
     "skipLink": "Zum Hauptinhalt springen"
   },
+  "common": {
+    "faqNotAvailableYet": "Für diesen Bereich sind noch keine häufigen Fragen hinterlegt."
+  },
   "trust": {
     "certifiedLabel": "Geprüft & beaufsichtigt"
   },

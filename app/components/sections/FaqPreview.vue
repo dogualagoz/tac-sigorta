@@ -1,11 +1,11 @@
 <script setup lang="ts">
-// Not `home.ts`'e bağlı — Sicherungsschein/Insolvenzabsicherung gibi kendi
-// içerik şeması olan sayfalarda da kullanılacak (adım 5).
-defineProps<{
-  faq: { label: string, title: string }
+// Startseite'de kategori filtresiz (tüm sorular); Sicherungsschein/
+// Insolvenzabsicherung'da `category` ile faq.json'daki ilgili sorulara daraltılır.
+const props = defineProps<{
+  faq: { label: string, title: string, category?: string }
 }>()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: faqEntries } = await useAsyncData(
   () => `faq-preview-${locale.value}`,
@@ -13,8 +13,12 @@ const { data: faqEntries } = await useAsyncData(
   { watch: [locale] },
 )
 
+const filteredEntries = computed(() =>
+  (faqEntries.value ?? []).filter(entry => !props.faq.category || entry.category === props.faq.category),
+)
+
 const accordionItems = computed(() =>
-  (faqEntries.value ?? []).map((entry, index) => ({ id: `faq-${index}`, title: entry.question })),
+  filteredEntries.value.map((entry, index) => ({ id: `faq-${index}`, title: entry.question })),
 )
 </script>
 
@@ -29,15 +33,22 @@ const accordionItems = computed(() =>
     </h2>
     <div class="mt-7">
       <BaseAccordion
+        v-if="accordionItems.length"
         :items="accordionItems"
         :default-open-id="accordionItems[0]?.id"
       >
         <template #default="{ item }">
           <p class="max-w-[660px] text-md leading-relaxed text-navy-500">
-            {{ faqEntries?.[Number(item.id.split('-')[1])]?.answer }}
+            {{ filteredEntries[Number(item.id.split('-')[1])]?.answer }}
           </p>
         </template>
       </BaseAccordion>
+      <p
+        v-else
+        class="text-md text-slate-500"
+      >
+        {{ t('common.faqNotAvailableYet') }}
+      </p>
     </div>
   </div>
 </template>

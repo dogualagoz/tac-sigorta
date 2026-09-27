@@ -47,6 +47,9 @@
   "a11y": {
     "skipLink": "Ana içeriğe geç"
   },
+  "common": {
+    "faqNotAvailableYet": "Bu bölüm için henüz sık sorulan soru girilmedi."
+  },
   "trust": {
     "certifiedLabel": "Denetime tabi kuruluş"
   },

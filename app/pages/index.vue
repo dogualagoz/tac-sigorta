@@ -20,12 +20,18 @@ useSeoMeta({
   >
     <HeroSection :hero="home.hero" />
     <TrustIcons :badges="home.trustBadges" />
-    <NachweisPruefenSection :nachweis-teaser="home.nachweisTeaser" />
+    <NachweisPruefenSection
+      :nachweis-teaser="home.nachweisTeaser"
+      id-prefix="home-nachweis"
+    />
     <ProductsTeaser :products-teaser="home.productsTeaser" />
     <LegalSection :legal="home.legal" />
     <ProcessSteps :process="home.process" />
     <WhyTsc :why-tsc="home.whyTsc" />
-    <CtaSection :cta="home.cta" />
+    <CtaSection
+      :cta="home.cta"
+      to="/angebote"
+    />
 
     <!-- Mobil sabit aksiyon çubuğu — bkz. frame-mobil-start.html -->
     <div class="fixed inset-x-0 bottom-0 z-40 flex gap-2.5 border-t border-border bg-white p-3 xl:hidden">

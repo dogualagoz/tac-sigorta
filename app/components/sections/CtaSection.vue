@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import type { RouteLocationRaw } from 'vue-router'
 import type { HomeCta } from '~/types/home'
 
-defineProps<{
+// `to` varsayılanı /kontakt — CLAUDE.md "Formlar": ayrı bir Angebot formu yok,
+// tüm "Angebot anfordern" CTA'ları Kontakt formuna gider. Startseite'nin kendi
+// kampanya vitrinine (/angebote) bağlanması gerektiği için orada override edilir.
+withDefaults(defineProps<{
   cta: HomeCta
-}>()
+  to?: RouteLocationRaw
+}>(), {
+  to: '/kontakt',
+})
 
 const { data: site } = await useAsyncData('site-config', () => queryCollection('site').first())
 </script>
@@ -22,7 +29,7 @@ const { data: site } = await useAsyncData('site-config', () => queryCollection('
         </div>
         <div class="flex flex-col gap-3 sm:flex-row">
           <BaseButton
-            to="/angebote"
+            :to="to"
             variant="secondary"
           >
             {{ cta.primaryCta }}

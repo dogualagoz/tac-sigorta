@@ -101,17 +101,92 @@ const homeSchema = z.object({
   }),
 })
 
+// Sicherungsschein + Insolvenzabsicherung — "aynı sayfa template'ini kullanır,
+// sadece içerik değişir" (CLAUDE.md). Sayfaya özgü bloklar nullable: her iki
+// sayfa aynı bileşen setini kullanır, brief'in blok sırası sayfa şablonunda
+// (app/pages/sicherungsschein.vue, insolvenzabsicherung.vue) uygulanır.
+const productPageSchema = z.object({
+  approved: z.boolean().default(false),
+  hero: z.object({
+    eyebrow: z.string(),
+    title: z.string(),
+    subtitle: z.string(),
+    note: z.string().nullable(),
+    primaryCta: z.string(),
+    secondaryCta: z.string().nullable(),
+  }),
+  intro: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()),
+  }),
+  benefits: z.object({
+    label: z.string(),
+    title: z.string(),
+    items: z.array(z.string()),
+  }),
+  additionalBenefits: z.object({
+    label: z.string(),
+    title: z.string(),
+    items: z.array(z.string()),
+  }).nullable(),
+  process: z.object({
+    label: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    steps: z.array(z.object({
+      day: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })),
+  }).nullable(),
+  nachweisSection: z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+  cta: z.object({
+    title: z.string(),
+    description: z.string(),
+    primaryCta: z.string(),
+    secondaryCta: z.string(),
+  }).nullable(),
+  faq: z.object({
+    label: z.string(),
+    title: z.string(),
+    category: z.string(),
+  }),
+})
+
 export default defineContentConfig({
   collections: {
     dePages: defineCollection({
       type: 'page',
-      source: { include: 'de/pages/**/*.md', exclude: ['de/pages/index.md'], prefix: '' },
+      source: {
+        include: 'de/pages/**/*.md',
+        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md'],
+        prefix: '',
+      },
       schema: pageSchema,
     }),
     deHome: defineCollection({
       type: 'page',
-      source: { include: 'de/pages/index.md', prefix: '' },
+      // @nuxt/content sadece include glob'unda "*" varsa dizin önekini path'ten
+      // kırpıyor (bkz. module.mjs parseSourceBase) — bu yüzden brace/tam dosya adı
+      // yerine "*.md" + exclude kullanılıyor.
+      source: {
+        include: 'de/pages/*.md',
+        exclude: ['de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md'],
+        prefix: '',
+      },
       schema: homeSchema,
+    }),
+    deProductPages: defineCollection({
+      type: 'page',
+      source: {
+        include: 'de/pages/*.md',
+        exclude: ['de/pages/index.md', 'de/pages/service.md', 'de/pages/ueber-uns.md'],
+        prefix: '',
+      },
+      schema: productPageSchema,
     }),
     deLegal: defineCollection({
       type: 'page',
@@ -129,13 +204,30 @@ export default defineContentConfig({
     }),
     trPages: defineCollection({
       type: 'page',
-      source: { include: 'tr/pages/**/*.md', exclude: ['tr/pages/index.md'], prefix: '' },
+      source: {
+        include: 'tr/pages/**/*.md',
+        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md'],
+        prefix: '',
+      },
       schema: pageSchema,
     }),
     trHome: defineCollection({
       type: 'page',
-      source: { include: 'tr/pages/index.md', prefix: '' },
+      source: {
+        include: 'tr/pages/*.md',
+        exclude: ['tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md'],
+        prefix: '',
+      },
       schema: homeSchema,
+    }),
+    trProductPages: defineCollection({
+      type: 'page',
+      source: {
+        include: 'tr/pages/*.md',
+        exclude: ['tr/pages/index.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md'],
+        prefix: '',
+      },
+      schema: productPageSchema,
     }),
     trLegal: defineCollection({
       type: 'page',

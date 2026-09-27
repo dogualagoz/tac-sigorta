@@ -1,8 +1,20 @@
 <script setup lang="ts">
-// İskelet — Startseite'de kullanılmıyor, alt sayfalarda (adım 5+) devreye girecek.
-// bkz. plan "elegant-sparking-piglet.md".
 const { t } = useI18n()
 const route = useRoute()
+
+// URL segmenti → mevcut nav çevirisi. Eşleşme yoksa segment sermayelenerek
+// gösterilir (bkz. CLAUDE.md "Sayfalar ve URL'ler").
+const SEGMENT_LABELS: Record<string, string> = {
+  'sicherungsschein': 'nav.sicherungsschein',
+  'insolvenzabsicherung': 'nav.insolvenzabsicherung',
+  'reiseversicherungen': 'nav.reiseversicherungen',
+  'angebote': 'nav.angebote',
+  'nachweis-pruefen': 'nav.nachweisPruefen',
+  'service': 'nav.service',
+  'ueber-uns': 'nav.ueberUns',
+  'kontakt': 'nav.kontakt',
+  'faq': 'nav.faq',
+}
 
 const crumbs = computed(() => {
   const segments = route.path.split('/').filter(Boolean).filter(segment => segment !== 'tr')
@@ -11,7 +23,9 @@ const crumbs = computed(() => {
     { label: t('nav.startseite'), path: '/' },
     ...segments.map((segment) => {
       path += `/${segment}`
-      return { label: segment, path }
+      const translationKey = SEGMENT_LABELS[segment]
+      const label = translationKey ? t(translationKey) : segment.charAt(0).toUpperCase() + segment.slice(1)
+      return { label, path }
     }),
   ]
 })
