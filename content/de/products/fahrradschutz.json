@@ -1,0 +1,11 @@
+{
+  "slug": "fahrradschutz",
+  "name": "Fahrradschutz",
+  "icon": "shield",
+  "benefit": "[TEXT FEHLT: Fahrradschutz Nutzenversprechen]",
+  "price": null,
+  "period": null,
+  "badge": null,
+  "approved": false,
+  "featured": true
+}

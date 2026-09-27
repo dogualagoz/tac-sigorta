@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import type { ProductCardItem } from './ProductCard.vue'
 
-defineProps<{
+withDefaults(defineProps<{
   products: ProductCardItem[]
-}>()
+  size?: 'default' | 'large'
+  ctaLabel?: string
+}>(), {
+  size: 'default',
+  ctaLabel: undefined,
+})
 </script>
 
 <template>
@@ -12,6 +17,8 @@ defineProps<{
       v-for="product in products"
       :key="product.slug"
       :product="product"
+      :size="size"
+      :cta-label="ctaLabel"
     />
   </div>
 </template>

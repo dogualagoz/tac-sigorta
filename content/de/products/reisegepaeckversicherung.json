@@ -1,0 +1,11 @@
+{
+  "slug": "reisegepaeckversicherung",
+  "name": "Reisegepäckversicherung",
+  "icon": "shield",
+  "benefit": "[TEXT FEHLT: Reisegepäckversicherung Nutzenversprechen]",
+  "price": null,
+  "period": null,
+  "badge": null,
+  "approved": false,
+  "featured": true
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "geschaeftsreise",
+  "name": "Geschäftsreise",
+  "icon": "shield",
+  "benefit": "[TEXT FEHLT: Geschäftsreise Nutzenversprechen]",
+  "price": null,
+  "period": null,
+  "badge": null,
+  "approved": false,
+  "featured": true
+}

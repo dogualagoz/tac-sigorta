@@ -1,0 +1,11 @@
+{
+  "slug": "auslandskrankenversicherung",
+  "name": "Auslandskrankenversicherung",
+  "icon": "shield",
+  "benefit": "[TEXT FEHLT: Auslandskrankenversicherung Nutzenversprechen]",
+  "price": null,
+  "period": null,
+  "badge": null,
+  "approved": false,
+  "featured": true
+}
