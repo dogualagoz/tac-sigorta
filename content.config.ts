@@ -166,13 +166,27 @@ const listingPageSchema = z.object({
   }),
 })
 
+// Kontakt — brief bölüm 08: sol tarafta iletişim bilgileri (site.json'dan),
+// sağda form. Sayfaya özgü tek metin hero başlığı + form kutusu üst başlığı;
+// tasarım referansındaki "Alle Kontaktdaten anzeigen" linki brief'in onaylı
+// listesinde yok ve aynı sayfada zaten tüm iletişim bilgileri gösterildiği
+// için işlevsiz — kasıtlı olarak uygulanmadı.
+const kontaktPageSchema = z.object({
+  approved: z.boolean().default(false),
+  hero: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+  }),
+  formTitle: z.string(),
+})
+
 export default defineContentConfig({
   collections: {
     dePages: defineCollection({
       type: 'page',
       source: {
         include: 'de/pages/**/*.md',
-        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md'],
+        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md', 'de/pages/kontakt.md'],
         prefix: '',
       },
       schema: pageSchema,
@@ -184,7 +198,7 @@ export default defineContentConfig({
       // yerine "*.md" + exclude kullanılıyor.
       source: {
         include: 'de/pages/*.md',
-        exclude: ['de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md'],
+        exclude: ['de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md', 'de/pages/kontakt.md'],
         prefix: '',
       },
       schema: homeSchema,
@@ -193,7 +207,7 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'de/pages/*.md',
-        exclude: ['de/pages/index.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md'],
+        exclude: ['de/pages/index.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md', 'de/pages/kontakt.md'],
         prefix: '',
       },
       schema: productPageSchema,
@@ -202,10 +216,19 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'de/pages/*.md',
-        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md'],
+        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/kontakt.md'],
         prefix: '',
       },
       schema: listingPageSchema,
+    }),
+    deKontaktPage: defineCollection({
+      type: 'page',
+      source: {
+        include: 'de/pages/*.md',
+        exclude: ['de/pages/index.md', 'de/pages/sicherungsschein.md', 'de/pages/insolvenzabsicherung.md', 'de/pages/service.md', 'de/pages/ueber-uns.md', 'de/pages/reiseversicherungen.md', 'de/pages/angebote.md'],
+        prefix: '',
+      },
+      schema: kontaktPageSchema,
     }),
     deLegal: defineCollection({
       type: 'page',
@@ -227,7 +250,7 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'tr/pages/**/*.md',
-        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md'],
+        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md', 'tr/pages/kontakt.md'],
         prefix: '',
       },
       schema: pageSchema,
@@ -236,7 +259,7 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'tr/pages/*.md',
-        exclude: ['tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md'],
+        exclude: ['tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md', 'tr/pages/kontakt.md'],
         prefix: '',
       },
       schema: homeSchema,
@@ -245,7 +268,7 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'tr/pages/*.md',
-        exclude: ['tr/pages/index.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md'],
+        exclude: ['tr/pages/index.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md', 'tr/pages/kontakt.md'],
         prefix: '',
       },
       schema: productPageSchema,
@@ -254,10 +277,19 @@ export default defineContentConfig({
       type: 'page',
       source: {
         include: 'tr/pages/*.md',
-        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md'],
+        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/kontakt.md'],
         prefix: '',
       },
       schema: listingPageSchema,
+    }),
+    trKontaktPage: defineCollection({
+      type: 'page',
+      source: {
+        include: 'tr/pages/*.md',
+        exclude: ['tr/pages/index.md', 'tr/pages/sicherungsschein.md', 'tr/pages/insolvenzabsicherung.md', 'tr/pages/service.md', 'tr/pages/ueber-uns.md', 'tr/pages/reiseversicherungen.md', 'tr/pages/angebote.md'],
+        prefix: '',
+      },
+      schema: kontaktPageSchema,
     }),
     trLegal: defineCollection({
       type: 'page',

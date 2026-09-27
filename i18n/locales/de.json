@@ -20,7 +20,7 @@
     "jetztSichern": "Jetzt sichern",
     "weiter": "Weiter",
     "zurueck": "Zurück",
-    "absenden": "Absenden",
+    "absenden": "Nachricht senden",
     "anrufen": "Anrufen"
   },
   "price": {
@@ -35,7 +35,13 @@
     "dsgvoConsent": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
     "loading": "Wird gesendet …",
     "success": "Vielen Dank! Wir melden uns in Kürze.",
-    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "nachricht": "Bitte geben Sie eine Nachricht ein.",
+      "dsgvoConsent": "Bitte stimmen Sie der Datenschutzerklärung zu."
+    }
   },
   "nachweis": {
     "numberLabel": "Sicherungsschein-/Nachweisnummer",

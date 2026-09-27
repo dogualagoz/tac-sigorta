@@ -20,7 +20,7 @@
     "jetztSichern": "Şimdi Güvence Altına Al",
     "weiter": "İleri",
     "zurueck": "Geri",
-    "absenden": "Gönder",
+    "absenden": "Mesajı Gönder",
     "anrufen": "Ara"
   },
   "price": {
@@ -35,7 +35,13 @@
     "dsgvoConsent": "Gizlilik politikasını okudum ve verilerimin işlenmesini kabul ediyorum.",
     "loading": "Gönderiliyor …",
     "success": "Teşekkürler! En kısa sürede size dönüş yapacağız.",
-    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "errors": {
+      "name": "Lütfen isminizi girin.",
+      "email": "Lütfen geçerli bir e-posta adresi girin.",
+      "nachricht": "Lütfen bir mesaj girin.",
+      "dsgvoConsent": "Lütfen gizlilik politikasını kabul edin."
+    }
   },
   "nachweis": {
     "numberLabel": "Sicherungsschein-/Belge Numarası",

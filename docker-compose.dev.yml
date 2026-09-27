@@ -18,6 +18,13 @@ services:
       # Docker Desktop'ta (macOS) dosya değişikliği bildirimleri bazen gecikir —
       # polling ile hot-reload'ın her koşulda çalışmasını garanti eder.
       - CHOKIDAR_USEPOLLING=true
+      # Kontakt formu SMTP ayarları (bkz. CLAUDE.md "Formlar", server/utils/mail.ts).
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-}
+      - KONTAKT_TO_EMAIL=${KONTAKT_TO_EMAIL:-}
     command: npm run dev -- --host 0.0.0.0
 
 volumes:

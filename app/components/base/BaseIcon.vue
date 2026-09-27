@@ -15,6 +15,7 @@ const ICONS: Record<IconName, string[]> = {
   'shield': ['M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z'],
   'menu': ['M4 7h16', 'M4 12h16', 'M4 17h16'],
   'close': ['M6 6l12 12', 'M18 6L6 18'],
+  'pin': ['M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z', 'M12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z'],
 }
 
 const props = withDefaults(defineProps<{

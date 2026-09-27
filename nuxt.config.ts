@@ -66,7 +66,9 @@ export default defineNuxtConfig({
     smtpUser: '',
     smtpPass: '',
     smtpFrom: '',
-    angebotToEmail: '',
+    // CLAUDE.md "Formlar": ayrı bir Angebot formu yok, tüm "Angebot anfordern"
+    // CTA'ları Kontakt formuna gider — bu yüzden tek hedef adres Kontakt için.
+    kontaktToEmail: '',
     public: {
       devLocaleTr,
     },

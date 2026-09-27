@@ -12,3 +12,4 @@ export type IconName
     | 'shield'
     | 'menu'
     | 'close'
+    | 'pin'
