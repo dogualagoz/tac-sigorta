@@ -1,26 +1,11 @@
-# docs/ — Eksik: Brief PDF
-
-CLAUDE.md'nin kaynak sırasına göre üçüncü öncelikli kaynak şu dosya olmalı:
+# docs/ — Brief PDF
 
 ```
 docs/TSC_Website_Gorselli_Basit_Yazilimci_Taslagi_v2.pdf
 ```
 
-Bu dosya **henüz projede yok**. Kapsam, sayfa listesi, blok sıraları ve asıl Almanca ekran metinlerinin kaynağı bu PDF olacaktı; CLAUDE.md'nin "Teyit bekleyenler" bölümündeki birçok madde (şirket türü GmbH/AG çelişkisi, gerçek adres, nihai 8 ürün listesi, FAQ cevapları, süreç adımları) bu PDF olmadan çözülemiyor.
+Brief proje sahibinden geldi (2026-09-27) — CLAUDE.md'nin kaynak sırasına göre üçüncü öncelikli kaynak, kapsam/sayfa listesi/blok sıraları ve gerçek Almanca ekran metinlerinin asıl kaynağı.
 
-## Şu an ne kullanılıyor
+CLAUDE.md'nin "Teyit bekleyenler" bölümü bu belgeye göre güncellendi (şirket türü, menü yapısı, tasarımda-olup-brief'te-olmayan linklerin reddi, nihai 8 ürün listesi, `/angebote` sayfasının anlamı çözüldü). Detaylar için `~/.claude/plans/elegant-sparking-piglet.md`.
 
-MVP (adım 1–6), birincil görsel referans olarak `design-reference/` altındaki Claude Design export'unu kullanıyor. İçerik tarafında ise:
-
-- Uydurma olgu/rakam/isim → görünür placeholder (`[TEXT FEHLT: …]`, `[FEHLT]`)
-- Nötr arayüz metni → `i18n/locales/de.json`
-- Tanıtım düzyazısı (hero, süreç adımları, FAQ) → `content/de/` altında, `approved: false` ile işaretli
-
-Detaylar için onaylı plan: `~/.claude/plans/plan-claude-md-yi-b-rakt-m-hashed-papert.md`.
-
-## Brief PDF geldiğinde
-
-1. Bu dosyayı `docs/` altına koy.
-2. `content/de/` içindeki `approved: false` bloklarını brief'teki gerçek metinle güncelle, `approved: true` yap.
-3. "Teyit bekleyenler" listesindeki maddeleri (CLAUDE.md) brief'e göre çöz, CLAUDE.md'yi güncelle.
-4. Şirket türü (GmbH/AG), adres, HRB/BaFin numaraları gibi hukuki verileri `content/site.json`'a işle.
+Hâlâ açık kalanlar CLAUDE.md'nin "Teyit bekleyenler" bölümünde listeli (adres/telefon/e-posta/Geschäftsführer/HRB/BaFin — brief'in kendi notuna göre bunlar da hâlâ örnek/placeholder, TSC tarafından doğrulanacak).

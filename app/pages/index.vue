@@ -18,33 +18,19 @@ useSeoMeta({
     v-if="home"
     class="pb-24 lg:pb-0"
   >
-    <HeroSection
-      :hero="home.hero"
-      :qualifier="home.qualifier"
-    />
+    <HeroSection :hero="home.hero" />
     <TrustIcons :badges="home.trustBadges" />
+    <NachweisPruefenSection :nachweis-teaser="home.nachweisTeaser" />
+    <ProductsTeaser :products-teaser="home.productsTeaser" />
     <LegalSection :legal="home.legal" />
     <ProcessSteps :process="home.process" />
-    <TariffTable :tariffs="home.tariffs" />
-    <TestimonialGrid :testimonials="home.testimonials" />
-
-    <section class="border-b border-border bg-white">
-      <TheContainer>
-        <div class="grid grid-cols-1 gap-10 py-16 lg:grid-cols-[1fr_380px] lg:gap-16 lg:py-20">
-          <FaqPreview :faq="home.faq" />
-          <DownloadsCard :downloads="home.downloads" />
-        </div>
-      </TheContainer>
-    </section>
-
-    <TeamGrid :team="home.team" />
-    <NewsList :news="home.news" />
+    <WhyTsc :why-tsc="home.whyTsc" />
     <CtaSection :cta="home.cta" />
 
     <!-- Mobil sabit aksiyon çubuğu — bkz. frame-mobil-start.html -->
-    <div class="fixed inset-x-0 bottom-0 z-40 flex gap-2.5 border-t border-border bg-white p-3 lg:hidden">
+    <div class="fixed inset-x-0 bottom-0 z-40 flex gap-2.5 border-t border-border bg-white p-3 xl:hidden">
       <BaseButton
-        to="/angebote"
+        to="/kontakt"
         variant="primary"
         block
       >

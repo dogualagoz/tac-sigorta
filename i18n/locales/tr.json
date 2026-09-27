@@ -10,7 +10,6 @@
     "faq": "SSS",
     "kontakt": "İletişim",
     "ueberUns": "Hakkımızda",
-    "rechtsgrundlagen": "Yasal Dayanak",
     "ariaLabel": "Ana Navigasyon"
   },
   "cta": {
@@ -21,12 +20,7 @@
     "weiter": "İleri",
     "zurueck": "Geri",
     "absenden": "Gönder",
-    "rueckrufVereinbaren": "Geri Arama Talep Et",
-    "anrufen": "Ara",
-    "referenzenAnsehen": "Referansları Gör",
-    "gesamtesTeam": "Tüm Ekip",
-    "alleMeldungen": "Tüm Duyurular",
-    "zumDownloadcenter": "İndirme Merkezine Git"
+    "anrufen": "Ara"
   },
   "price": {
     "aufAnfrage": "Fiyat için teklif isteyin"
@@ -42,21 +36,24 @@
     "success": "Teşekkürler! En kısa sürede size dönüş yapacağız.",
     "error": "Bir hata oluştu. Lütfen tekrar deneyin."
   },
+  "nachweis": {
+    "numberLabel": "Sicherungsschein-/Belge Numarası",
+    "numberPlaceholder": "örn. S123456789",
+    "nameLabel": "Tur Operatörünün Adı",
+    "namePlaceholder": "İsim girin",
+    "submit": "Şimdi Kontrol Et",
+    "notAvailableYet": "Bu özellik yakında kullanıma sunulacak."
+  },
   "a11y": {
     "skipLink": "Ana içeriğe geç"
   },
   "trust": {
     "certifiedLabel": "Denetime tabi kuruluş"
   },
-  "home": {
-    "tariffFeatureLabel": "Özellik"
-  },
   "header": {
     "brandName": "TSC Versicherung",
     "topbar": {
-      "advisory": "Tur operatörleri için danışmanlık",
-      "maklerportal": "Aracı Portalı",
-      "schadenmeldung": "Hasar Bildirimi"
+      "advisory": "Tur operatörleri için danışmanlık"
     },
     "mobileMenu": {
       "open": "Menüyü aç",
@@ -71,12 +68,6 @@
       "produkte": "Ürünler",
       "service": "Hizmetler",
       "unternehmen": "Kurumsal"
-    },
-    "links": {
-      "gruppenIncoming": "Grup ve Incoming",
-      "downloadcenter": "İndirme Merkezi",
-      "aktuelles": "Duyurular",
-      "karriere": "Kariyer"
     }
   },
   "dev": {

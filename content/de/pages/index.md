@@ -3,42 +3,32 @@ title: "[TEXT FEHLT: Startseite Meta-Titel]"
 description: "[TEXT FEHLT: Startseite Meta-Beschreibung]"
 approved: false
 hero:
-  badge: "[TEXT FEHLT: Hero Rechtsbadge]"
-  title: "[TEXT FEHLT: Hero Titel]"
-  subtitle: "[TEXT FEHLT: Hero Untertitel]"
-  note: "[TEXT FEHLT: Hero Bearbeitungshinweis]"
-  primaryCta: "[TEXT FEHLT: Hero Primär-CTA]"
-  secondaryCta: "[TEXT FEHLT: Hero Sekundär-CTA]"
-  trustLine:
-    - "[TEXT FEHLT: Vertrauenspunkt 1]"
-    - "[TEXT FEHLT: Vertrauenspunkt 2]"
-    - "[TEXT FEHLT: Vertrauenspunkt 3]"
-qualifier:
-  title: "[TEXT FEHLT: Qualifizierungskarte Titel]"
-  description: "[TEXT FEHLT: Qualifizierungskarte Beschreibung]"
-  revenueLabel: "[TEXT FEHLT: Label Jahresumsatz]"
-  revenueOptions:
-    - "[TEXT FEHLT: Umsatzbereich 1]"
-    - "[TEXT FEHLT: Umsatzbereich 2]"
-    - "[TEXT FEHLT: Umsatzbereich 3]"
-  locationLabel: "[TEXT FEHLT: Label Firmensitz]"
-  locationOptions:
-    - "[TEXT FEHLT: Firmensitz Option 1]"
-    - "[TEXT FEHLT: Firmensitz Option 2]"
-  ctaLabel: "[TEXT FEHLT: Qualifizierungskarte CTA]"
-  disclaimer: "[TEXT FEHLT: Qualifizierungskarte Hinweis]"
+  badge: "Sicher. Zuverlässig. Partnerschaftlich."
+  title: "Sicherungsschein für Reiseveranstalter und umfassende Online-Reisebüros"
+  subtitle: "Schutz für Ihre Kunden. Sicherheit für Ihr Unternehmen. Seit über 20 Jahren der verlässliche Partner der Reisebranche."
+  note: "Für Unternehmen mit eigener Veranstaltertätigkeit und einem relevanten Jahresumsatz von weniger als 10 Mio. €."
+  primaryCta: "Sicherungsschein anfragen"
+  secondaryCta: "Insolvenzabsicherung entdecken"
+  tagline: "Gemeinsam mehr möglich."
 trustBadges:
-  - label: "[TEXT FEHLT: Siegel 1]"
-  - label: "[TEXT FEHLT: Siegel 2]"
-  - label: "[TEXT FEHLT: Siegel 3]"
-  - label: "[TEXT FEHLT: Siegel 4]"
+  - label: "Persönliche Beratung"
+  - label: "Schnelle Prozesse"
+  - label: "Digitale Lösungen"
+  - label: "[TEXT FEHLT: Vertrauenspunkt 4]"
+nachweisTeaser:
+  title: "Sicherungsschein & Versicherungsnachweis prüfen"
+  description: "Prüfen Sie hier schnell und unkompliziert, ob ein von TSC ausgestellter Sicherungsschein oder Versicherungsnachweis in unserem System hinterlegt ist."
+productsTeaser:
+  title: "Beliebte Versicherungsangebote"
+  description: "Einfacher Schutz zu fairen Konditionen."
+  linkLabel: "Alle Angebote ansehen"
 legal:
-  label: "[TEXT FEHLT: Rechtsgrundlage Label]"
-  title: "[TEXT FEHLT: Rechtsgrundlage Titel]"
+  label: "[TEXT FEHLT: Bölüm Etiketi]"
+  title: "Absicherung für die Reisebranche"
   paragraphs:
-    - "[TEXT FEHLT: Rechtsgrundlage Absatz 1]"
-    - "[TEXT FEHLT: Rechtsgrundlage Absatz 2]"
-  summary: "[TEXT FEHLT: Rechtsgrundlage Kurzfassung]"
+    - "[TEXT FEHLT: Absicherung für die Reisebranche Absatz 1]"
+    - "[TEXT FEHLT: Absicherung für die Reisebranche Absatz 2]"
+  summary: "[TEXT FEHLT: Absicherung für die Reisebranche Kurzfassung]"
   quoteRef: "[TEXT FEHLT: Gesetzesangabe]"
   quoteText: "[TEXT FEHLT: Gesetzeszitat — wortgetreu aus Brief/Mandant zu übernehmen]"
   stats:
@@ -46,14 +36,10 @@ legal:
       label: "[TEXT FEHLT: Kennzahl 1 Beschriftung]"
     - value: "[FEHLT]"
       label: "[TEXT FEHLT: Kennzahl 2 Beschriftung]"
-  links:
-    - label: "[TEXT FEHLT: Rechtslink 1]"
-      href: "#"
-    - label: "[TEXT FEHLT: Rechtslink 2]"
-      href: "#"
+  links: []
 process:
   label: "[TEXT FEHLT: Ablauf Label]"
-  title: "[TEXT FEHLT: Ablauf Titel]"
+  title: "So funktioniert die Anfrage"
   intro: "[TEXT FEHLT: Ablauf Einleitung]"
   steps:
     - day: "[FEHLT]"
@@ -68,99 +54,21 @@ process:
     - day: "[FEHLT]"
       title: "[TEXT FEHLT: Schritt 4 Titel]"
       description: "[TEXT FEHLT: Schritt 4 Beschreibung]"
-tariffs:
-  label: "[TEXT FEHLT: Tarife Label]"
-  title: "[TEXT FEHLT: Tarife Titel]"
-  intro: "[TEXT FEHLT: Tarife Einleitung]"
-  columns:
-    - name: "[TEXT FEHLT: Tarifstufe 1]"
-      badge: null
-    - name: "[TEXT FEHLT: Tarifstufe 2]"
-      badge: "[TEXT FEHLT: Tarifstufe 2 Hinweis]"
-    - name: "[TEXT FEHLT: Tarifstufe 3]"
-      badge: null
-  rows:
-    - label: "[TEXT FEHLT: Merkmal 1]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-    - label: "[TEXT FEHLT: Merkmal 2]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-    - label: "[TEXT FEHLT: Merkmal 3]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-    - label: "[TEXT FEHLT: Merkmal 4]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-    - label: "[TEXT FEHLT: Merkmal 5]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-    - label: "[TEXT FEHLT: Merkmal 6]"
-      values: ["[FEHLT]", "[FEHLT]", "[FEHLT]"]
-  footnote: "[TEXT FEHLT: Tarife Fußnote]"
-faq:
-  label: "[TEXT FEHLT: FAQ Label]"
-  title: "[TEXT FEHLT: FAQ Titel]"
-testimonials:
-  title: "[TEXT FEHLT: Referenzen Titel]"
-  items:
-    - quote: "[TEXT FEHLT: Referenz 1 Zitat]"
-      author: "[TEXT FEHLT: Referenz 1 Name]"
-      role: "[TEXT FEHLT: Referenz 1 Position]"
-      company: "[TEXT FEHLT: Referenz 1 Unternehmen]"
-    - quote: "[TEXT FEHLT: Referenz 2 Zitat]"
-      author: "[TEXT FEHLT: Referenz 2 Name]"
-      role: "[TEXT FEHLT: Referenz 2 Position]"
-      company: "[TEXT FEHLT: Referenz 2 Unternehmen]"
-downloads:
-  title: "[TEXT FEHLT: Downloads Titel]"
-  description: "[TEXT FEHLT: Downloads Beschreibung]"
-  items:
-    - label: "[TEXT FEHLT: Download 1]"
-      meta: "[FEHLT]"
-    - label: "[TEXT FEHLT: Download 2]"
-      meta: "[FEHLT]"
-    - label: "[TEXT FEHLT: Download 3]"
-      meta: "[FEHLT]"
-    - label: "[TEXT FEHLT: Download 4]"
-      meta: "[FEHLT]"
-    - label: "[TEXT FEHLT: Download 5]"
-      meta: "[FEHLT]"
-  ctaLabel: "[TEXT FEHLT: Downloads CTA]"
-team:
-  label: "[TEXT FEHLT: Team Label]"
-  title: "[TEXT FEHLT: Team Titel]"
-  linkLabel: "[TEXT FEHLT: Team Link]"
-  members:
-    - name: "[TEXT FEHLT: Ansprechpartner 1 Name]"
-      role: "[TEXT FEHLT: Ansprechpartner 1 Funktion]"
-      phone: "[FEHLT]"
-      email: "[FEHLT]"
-      languages: ["[TEXT FEHLT: Sprachen 1]"]
-    - name: "[TEXT FEHLT: Ansprechpartner 2 Name]"
-      role: "[TEXT FEHLT: Ansprechpartner 2 Funktion]"
-      phone: "[FEHLT]"
-      email: "[FEHLT]"
-      languages: ["[TEXT FEHLT: Sprachen 2]"]
-    - name: "[TEXT FEHLT: Ansprechpartner 3 Name]"
-      role: "[TEXT FEHLT: Ansprechpartner 3 Funktion]"
-      phone: "[FEHLT]"
-      email: "[FEHLT]"
-      languages: ["[TEXT FEHLT: Sprachen 3]"]
-news:
-  title: "[TEXT FEHLT: Aktuelles Titel]"
-  intro: "[TEXT FEHLT: Aktuelles Einleitung]"
-  linkLabel: "[TEXT FEHLT: Aktuelles Link]"
-  items:
-    - date: "[FEHLT]"
-      title: "[TEXT FEHLT: Meldung 1 Titel]"
-      description: "[TEXT FEHLT: Meldung 1 Beschreibung]"
-    - date: "[FEHLT]"
-      title: "[TEXT FEHLT: Meldung 2 Titel]"
-      description: "[TEXT FEHLT: Meldung 2 Beschreibung]"
-    - date: "[FEHLT]"
-      title: "[TEXT FEHLT: Meldung 3 Titel]"
-      description: "[TEXT FEHLT: Meldung 3 Beschreibung]"
+whyTsc:
+  label: "[TEXT FEHLT: Warum TSC Label]"
+  title: "Warum TSC?"
+  points:
+    - title: "[TEXT FEHLT: Warum TSC Punkt 1 Titel]"
+      description: "[TEXT FEHLT: Warum TSC Punkt 1 Beschreibung]"
+    - title: "[TEXT FEHLT: Warum TSC Punkt 2 Titel]"
+      description: "[TEXT FEHLT: Warum TSC Punkt 2 Beschreibung]"
+    - title: "[TEXT FEHLT: Warum TSC Punkt 3 Titel]"
+      description: "[TEXT FEHLT: Warum TSC Punkt 3 Beschreibung]"
 cta:
   title: "[TEXT FEHLT: Schluss-CTA Titel]"
   description: "[TEXT FEHLT: Schluss-CTA Beschreibung]"
-  primaryCta: "[TEXT FEHLT: Schluss-CTA Primär]"
+  primaryCta: "Jetzt Angebot anfordern"
   secondaryCta: "[TEXT FEHLT: Schluss-CTA Sekundär]"
 ---
 
-<!-- TODO(TSC): teyit bekliyor — brief PDF henüz eklenmedi, bkz. docs/README.md -->
+<!-- TODO(TSC): teyit bekliyor — approved:false, brief'ten gelen metinler bile TSC/compliance onayı bekliyor -->

@@ -18,27 +18,23 @@ watch(() => route.fullPath, () => {
   mobileOpen.value = false
 })
 
-// CLAUDE.md "Menü (önerilen)" + onaylı plan madde 4: tasarımın nav'ı ile CLAUDE.md
-// URL listesi arasındaki eşleme. Bkz. plan "elegant-sparking-piglet.md".
+// Brief sayfa 14 "Ana menü": kesin liste, dropdown yok, placeholder link yok.
 const navLinks = computed(() => [
+  { label: t('nav.startseite'), to: '/' },
   { label: t('nav.sicherungsschein'), to: '/sicherungsschein' },
   { label: t('nav.insolvenzabsicherung'), to: '/insolvenzabsicherung' },
   { label: t('nav.reiseversicherungen'), to: '/reiseversicherungen' },
-  { label: t('nav.rechtsgrundlagen'), to: '/sicherungsschein#rechtsgrundlage' },
-  { label: t('header.topbar.schadenmeldung'), placeholder: true },
+  { label: t('nav.angebote'), to: '/angebote' },
+  { label: t('nav.service'), to: '/service' },
   { label: t('nav.ueberUns'), to: '/ueber-uns' },
-])
-
-const placeholderTopbarLinks = computed(() => [
-  t('header.topbar.maklerportal'),
-  t('header.topbar.schadenmeldung'),
+  { label: t('nav.kontakt'), to: '/kontakt' },
 ])
 </script>
 
 <template>
   <header class="border-b border-border bg-white">
     <!-- Top bar — masaüstünde görünür, mobilde gizli -->
-    <div class="hidden bg-navy-800 text-white lg:block">
+    <div class="hidden bg-navy-800 text-white xl:block">
       <TheContainer>
         <div class="flex h-11 items-center justify-between gap-8 text-sm">
           <div class="flex items-center gap-3 text-border-strong">
@@ -57,34 +53,23 @@ const placeholderTopbarLinks = computed(() => [
             />
             <span>{{ site?.openingHours }}</span>
           </div>
-          <div class="flex items-center gap-5 text-border-strong">
-            <span
-              v-for="label in placeholderTopbarLinks"
-              :key="label"
-              class="cursor-not-allowed opacity-70"
-              title="TODO(TSC): teyit bekliyor"
-            >{{ label }}</span>
-            <template v-if="config.public.devLocaleTr">
-              <span
-                aria-hidden="true"
-                class="h-3 border-l border-navy-600"
-              />
-              <span class="flex items-center gap-2">
-                <NuxtLink
-                  :to="switchLocalePath('de')"
-                  :class="locale === 'de' ? 'text-white font-semibold' : 'text-border-strong'"
-                >
-                  DE
-                </NuxtLink>
-                <NuxtLink
-                  :to="switchLocalePath(trLocaleCode)"
-                  :class="isTrLocale ? 'text-white font-semibold' : 'text-border-strong'"
-                >
-                  TR
-                </NuxtLink>
-                <span class="rounded-sm bg-navy-600 px-1.5 py-0.5 text-xs">{{ t('dev.locale') }}</span>
-              </span>
-            </template>
+          <div
+            v-if="config.public.devLocaleTr"
+            class="flex items-center gap-2 text-border-strong"
+          >
+            <NuxtLink
+              :to="switchLocalePath('de')"
+              :class="locale === 'de' ? 'text-white font-semibold' : 'text-border-strong'"
+            >
+              DE
+            </NuxtLink>
+            <NuxtLink
+              :to="switchLocalePath(trLocaleCode)"
+              :class="isTrLocale ? 'text-white font-semibold' : 'text-border-strong'"
+            >
+              TR
+            </NuxtLink>
+            <span class="rounded-sm bg-navy-600 px-1.5 py-0.5 text-xs">{{ t('dev.locale') }}</span>
           </div>
         </div>
       </TheContainer>
@@ -92,7 +77,7 @@ const placeholderTopbarLinks = computed(() => [
 
     <!-- Ana bar -->
     <TheContainer>
-      <div class="flex h-[72px] items-center justify-between gap-10 lg:h-[82px]">
+      <div class="flex h-[72px] items-center justify-between gap-6 lg:h-[82px]">
         <NuxtLink
           to="/"
           class="flex items-center gap-3"
@@ -106,28 +91,19 @@ const placeholderTopbarLinks = computed(() => [
 
         <nav
           :aria-label="t('nav.ariaLabel')"
-          class="hidden items-center gap-7 lg:flex"
+          class="hidden items-center gap-5 xl:flex"
         >
-          <template
+          <NuxtLink
             v-for="link in navLinks"
             :key="link.label"
+            :to="link.to"
+            class="font-heading text-sm font-semibold text-navy-800 hover:text-blue-600"
           >
-            <NuxtLink
-              v-if="!link.placeholder"
-              :to="link.to"
-              class="font-heading text-sm font-semibold text-navy-800 hover:text-blue-600"
-            >
-              {{ link.label }}
-            </NuxtLink>
-            <span
-              v-else
-              class="cursor-not-allowed font-heading text-sm font-semibold text-slate-400"
-              title="TODO(TSC): teyit bekliyor"
-            >{{ link.label }}</span>
-          </template>
+            {{ link.label }}
+          </NuxtLink>
         </nav>
 
-        <div class="hidden items-center gap-3 lg:flex">
+        <div class="hidden items-center gap-3 xl:flex">
           <BaseButton
             to="/nachweis-pruefen"
             variant="ghost"
@@ -135,7 +111,7 @@ const placeholderTopbarLinks = computed(() => [
             {{ t('cta.nachweisPruefen') }}
           </BaseButton>
           <BaseButton
-            to="/angebote"
+            to="/kontakt"
             variant="primary"
           >
             {{ t('cta.angebotAnfordern') }}
@@ -144,7 +120,7 @@ const placeholderTopbarLinks = computed(() => [
 
         <button
           type="button"
-          class="flex h-11 w-11 items-center justify-center rounded-input border border-border text-navy-800 lg:hidden"
+          class="flex h-11 w-11 items-center justify-center rounded-input border border-border text-navy-800 xl:hidden"
           :aria-expanded="mobileOpen"
           aria-controls="mobile-nav-panel"
           :aria-label="mobileOpen ? t('header.mobileMenu.close') : t('header.mobileMenu.open')"
@@ -159,33 +135,25 @@ const placeholderTopbarLinks = computed(() => [
     <div
       v-if="mobileOpen"
       id="mobile-nav-panel"
-      class="border-t border-border bg-white lg:hidden"
+      class="border-t border-border bg-white xl:hidden"
     >
       <TheContainer>
         <nav
           :aria-label="t('nav.ariaLabel')"
           class="flex flex-col gap-1 py-4"
         >
-          <template
+          <NuxtLink
             v-for="link in navLinks"
             :key="link.label"
+            :to="link.to"
+            class="rounded-input px-2 py-3 font-heading text-base font-semibold text-navy-800 hover:bg-sky"
           >
-            <NuxtLink
-              v-if="!link.placeholder"
-              :to="link.to"
-              class="rounded-input px-2 py-3 font-heading text-base font-semibold text-navy-800 hover:bg-sky"
-            >
-              {{ link.label }}
-            </NuxtLink>
-            <span
-              v-else
-              class="px-2 py-3 font-heading text-base font-semibold text-slate-400"
-            >{{ link.label }}</span>
-          </template>
+            {{ link.label }}
+          </NuxtLink>
         </nav>
         <div class="flex flex-col gap-3 border-t border-border py-4">
           <BaseButton
-            to="/angebote"
+            to="/kontakt"
             variant="primary"
             block
           >
@@ -198,6 +166,20 @@ const placeholderTopbarLinks = computed(() => [
           >
             {{ t('cta.nachweisPruefen') }}
           </BaseButton>
+        </div>
+        <div
+          v-if="config.public.devLocaleTr"
+          class="flex items-center gap-2 border-t border-border py-4 text-sm text-slate-500"
+        >
+          <NuxtLink
+            :to="switchLocalePath('de')"
+            :class="locale === 'de' ? 'text-navy-800 font-semibold' : ''"
+          >DE</NuxtLink>
+          <NuxtLink
+            :to="switchLocalePath(trLocaleCode)"
+            :class="isTrLocale ? 'text-navy-800 font-semibold' : ''"
+          >TR</NuxtLink>
+          <span class="rounded-sm bg-sky px-1.5 py-0.5 text-xs">{{ t('dev.locale') }}</span>
         </div>
       </TheContainer>
     </div>

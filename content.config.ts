@@ -42,9 +42,9 @@ const pageSchema = z.object({
   approved: z.boolean().default(false),
 })
 
-// Startseite — tekrarlı bloklar (süreç adımları, tarife, referanslar vb.) düz
-// markdown gövdesine sığmadığı için ayrı, yapılandırılmış bir şema kullanılır.
-// bkz. onaylı plan "İçerik mimarisi": elegant-sparking-piglet.md
+// Startseite — tekrarlı bloklar düz markdown gövdesine sığmadığı için ayrı,
+// yapılandırılmış bir şema kullanılır. Blok listesi brief'in kendi site
+// haritasına (bölüm 16) birebir uyar — bkz. onaylı plan "elegant-sparking-piglet.md".
 const homeSchema = z.object({
   approved: z.boolean().default(false),
   hero: z.object({
@@ -54,19 +54,20 @@ const homeSchema = z.object({
     note: z.string(),
     primaryCta: z.string(),
     secondaryCta: z.string(),
-    trustLine: z.array(z.string()),
-  }),
-  qualifier: z.object({
-    title: z.string(),
-    description: z.string(),
-    revenueLabel: z.string(),
-    revenueOptions: z.array(z.string()),
-    locationLabel: z.string(),
-    locationOptions: z.array(z.string()),
-    ctaLabel: z.string(),
-    disclaimer: z.string(),
+    // El yazısı aksan — brief'te "Gemeinsam mehr möglich." (CLAUDE.md "Tipografi":
+    // tek script font, seyrek kullan).
+    tagline: z.string(),
   }),
   trustBadges: z.array(z.object({ label: z.string() })),
+  nachweisTeaser: z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+  productsTeaser: z.object({
+    title: z.string(),
+    description: z.string(),
+    linkLabel: z.string(),
+  }),
   legal: z.object({
     label: z.string(),
     title: z.string(),
@@ -87,54 +88,10 @@ const homeSchema = z.object({
       description: z.string(),
     })),
   }),
-  tariffs: z.object({
+  whyTsc: z.object({
     label: z.string(),
     title: z.string(),
-    intro: z.string(),
-    columns: z.array(z.object({ name: z.string(), badge: z.string().nullable() })),
-    rows: z.array(z.object({ label: z.string(), values: z.array(z.string()) })),
-    footnote: z.string(),
-  }),
-  faq: z.object({
-    label: z.string(),
-    title: z.string(),
-  }),
-  testimonials: z.object({
-    title: z.string(),
-    items: z.array(z.object({
-      quote: z.string(),
-      author: z.string(),
-      role: z.string(),
-      company: z.string(),
-    })),
-  }),
-  downloads: z.object({
-    title: z.string(),
-    description: z.string(),
-    items: z.array(z.object({ label: z.string(), meta: z.string() })),
-    ctaLabel: z.string(),
-  }),
-  team: z.object({
-    label: z.string(),
-    title: z.string(),
-    linkLabel: z.string(),
-    members: z.array(z.object({
-      name: z.string(),
-      role: z.string(),
-      phone: z.string(),
-      email: z.string(),
-      languages: z.array(z.string()),
-    })),
-  }),
-  news: z.object({
-    title: z.string(),
-    intro: z.string(),
-    linkLabel: z.string(),
-    items: z.array(z.object({
-      date: z.string(),
-      title: z.string(),
-      description: z.string(),
-    })),
+    points: z.array(z.object({ title: z.string(), description: z.string() })),
   }),
   cta: z.object({
     title: z.string(),

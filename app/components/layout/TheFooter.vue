@@ -5,23 +5,20 @@ const { data: site } = await useAsyncData('site-config', () => queryCollection('
 const year = new Date().getFullYear()
 
 const produktLinks = computed(() => [
-  { label: t('nav.insolvenzabsicherung'), to: '/insolvenzabsicherung' },
   { label: t('nav.sicherungsschein'), to: '/sicherungsschein' },
+  { label: t('nav.insolvenzabsicherung'), to: '/insolvenzabsicherung' },
   { label: t('nav.reiseversicherungen'), to: '/reiseversicherungen' },
-  { label: t('footer.links.gruppenIncoming'), placeholder: true },
+  { label: t('nav.angebote'), to: '/angebote' },
 ])
 
 const serviceLinks = computed(() => [
-  { label: t('header.topbar.maklerportal'), placeholder: true },
-  { label: t('footer.links.downloadcenter'), placeholder: true },
-  { label: t('header.topbar.schadenmeldung'), placeholder: true },
+  { label: t('nav.nachweisPruefen'), to: '/nachweis-pruefen' },
+  { label: t('nav.service'), to: '/service' },
   { label: t('nav.faq'), to: '/faq' },
 ])
 
 const unternehmenLinks = computed(() => [
   { label: t('nav.ueberUns'), to: '/ueber-uns' },
-  { label: t('footer.links.aktuelles'), placeholder: true },
-  { label: t('footer.links.karriere'), placeholder: true },
   { label: t('nav.kontakt'), to: '/kontakt' },
 ])
 
@@ -57,21 +54,14 @@ const legalLinks = computed(() => [
             {{ t('footer.columns.produkte') }}
           </div>
           <div class="mt-3.5 flex flex-col gap-2.5">
-            <template
+            <NuxtLink
               v-for="link in produktLinks"
               :key="link.label"
+              :to="link.to"
+              class="hover:text-white"
             >
-              <NuxtLink
-                v-if="!link.placeholder"
-                :to="link.to"
-                class="hover:text-white"
-              >{{ link.label }}</NuxtLink>
-              <span
-                v-else
-                class="cursor-not-allowed opacity-70"
-                title="TODO(TSC): teyit bekliyor"
-              >{{ link.label }}</span>
-            </template>
+              {{ link.label }}
+            </NuxtLink>
           </div>
         </div>
 
@@ -80,21 +70,14 @@ const legalLinks = computed(() => [
             {{ t('footer.columns.service') }}
           </div>
           <div class="mt-3.5 flex flex-col gap-2.5">
-            <template
+            <NuxtLink
               v-for="link in serviceLinks"
               :key="link.label"
+              :to="link.to"
+              class="hover:text-white"
             >
-              <NuxtLink
-                v-if="!link.placeholder"
-                :to="link.to"
-                class="hover:text-white"
-              >{{ link.label }}</NuxtLink>
-              <span
-                v-else
-                class="cursor-not-allowed opacity-70"
-                title="TODO(TSC): teyit bekliyor"
-              >{{ link.label }}</span>
-            </template>
+              {{ link.label }}
+            </NuxtLink>
           </div>
         </div>
 
@@ -103,21 +86,14 @@ const legalLinks = computed(() => [
             {{ t('footer.columns.unternehmen') }}
           </div>
           <div class="mt-3.5 flex flex-col gap-2.5">
-            <template
+            <NuxtLink
               v-for="link in unternehmenLinks"
               :key="link.label"
+              :to="link.to"
+              class="hover:text-white"
             >
-              <NuxtLink
-                v-if="!link.placeholder"
-                :to="link.to"
-                class="hover:text-white"
-              >{{ link.label }}</NuxtLink>
-              <span
-                v-else
-                class="cursor-not-allowed opacity-70"
-                title="TODO(TSC): teyit bekliyor"
-              >{{ link.label }}</span>
-            </template>
+              {{ link.label }}
+            </NuxtLink>
           </div>
         </div>
       </div>

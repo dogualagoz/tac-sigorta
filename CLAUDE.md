@@ -108,7 +108,7 @@ storage/pdfs/   doğrulama PDF'leri (web root DIŞINDA, git'e girmez)
 
 Bu listede olmayan bir sayfa veya link ekleme. Tasarım referansında listede olmayan bir link görürsen (aşağıdaki "Teyit bekleyenler") placeholder bırak ve bana söyle.
 
-**Menü (önerilen, teyit bekliyor):** Startseite · Sicherungsschein · Insolvenzabsicherung · Reiseversicherungen · Service (dropdown: Angebote, Nachweis prüfen, FAQ, Kontakt). Sağda iki aksiyon butonu: "Nachweis prüfen" ve "Angebot anfragen". Mobilde hamburger, aynı sıra, "Nachweis prüfen" ayrı belirgin buton.
+**Menü (kesinleşti, brief sayfa 14):** Startseite · Sicherungsschein · Insolvenzabsicherung · Reiseversicherungen · Angebote · Service · Über uns · Kontakt — düz liste, dropdown yok. Sağda iki sabit aksiyon butonu: "Nachweis prüfen" ve "Angebot anfordern" (bu ikinci buton `/kontakt`'a gider, ayrı bir Angebot formu yok). Mobilde hamburger, aynı sıra, "Nachweis prüfen" ayrı belirgin buton.
 
 Sicherungsschein ve Insolvenzabsicherung aynı sayfa template'ini kullanır, sadece içerik değişir.
 
@@ -186,7 +186,7 @@ Dashboard grafiği, rol sistemi, davet akışı, tema seçici, aktivite akışı
 
 ## Formlar
 
-Kontakt, Angebot anfragen, Nachweis prüfen.
+Kontakt, Nachweis prüfen. (Brief'te ayrı bir çok adımlı "Angebot anfordern" formu yok — `/angebote` bir fiyat/kampanya vitrini, tüm "Angebot anfordern" CTA'ları Kontakt formuna gider.)
 - Zod şeması client ve server'da ortak
 - Honeypot alanı + IP rate limit (captcha yok)
 - DSGVO onay checkbox'ı, Datenschutz sayfasına link
@@ -270,15 +270,19 @@ Form durumları için bir başarı ve bir hata rengi ekle, başka renk ekleme.
 
 ## Teyit bekleyenler
 
-Bunları kesinmiş gibi koda gömme. Placeholder bırak, yanına `<!-- TODO(TSC): teyit bekliyor -->` yaz.
+Brief PDF'i geldi (`docs/TSC_Website_Gorselli_Basit_Yazilimci_Taslagi_v2.pdf`, 17 sayfa) — aşağıdaki maddelerin çoğu bu belgeyle çözüldü. Kalan gerçek belirsizlikler için placeholder bırak, yanına `<!-- TODO(TSC): teyit bekliyor -->` yaz.
 
-- **Şirket türü:** brief'te "TSC Versicherung GmbH", tasarım referansı footer'ında "AG" geçiyor. Brief esas: GmbH.
-- **Tasarım footer'ındaki uydurma veriler:** Kurfürstendamm 214 Berlin adresi, HRB 184 226 B, BaFin-Register 5100-VU. Bunlar tasarım aracının uydurduğu değerler, koda **geçirilmez**. Brief'teki adres (Am Flughafen 6, 36110 Schlitz) de placeholder.
-- **Tasarımda olup brief'te olmayan linkler:** Gruppen- & Incoming, Maklerportal, Downloadcenter, Schadenmeldung, Aktuelles, Karriere. Teyit gelene kadar placeholder.
-- **Nihai 8 ürün listesi:** brief'te iki farklı liste var (bölüm 04/05 ile bölüm 15 uyuşmuyor).
-- **Fiyatlar:** onaylı tarife yok, hepsi `approved: false`.
-- **Menü yapısı** (yukarıdaki öneri).
-- **Eksik içerik:** FAQ cevapları, Service sayfası, "Für wen ist der Sicherungsschein?", başvuru süreci adımları, ürün fayda cümleleri, hukuki metinler, gerçek şirket bilgileri, logo SVG, lisanslı fotoğraflar.
+**Çözüldü:**
+- **Şirket türü:** GmbH kesinleşti (brief tutarlı şekilde "TSC Versicherung GmbH" kullanıyor; tasarım aracının "AG"si yanlıştı).
+- **Tasarımda olup brief'te olmayan linkler:** Rechtsgrundlagen, Downloads, Maklerportal, Schadenmeldung, Gruppen- & Incoming, Aktuelles, Karriere — brief'in 13 sayfalık site haritasında (bölüm 14) hiçbiri yok, **kesin red**. Nav/footer'da placeholder olarak bile durmuyorlar, tamamen kaldırıldılar.
+- **Menü yapısı:** kesinleşti, bkz. yukarıdaki "Menü" satırı.
+- **Nihai 8 ürün listesi:** brief'te iki farklı liste vardı (bölüm 04 vitrin listesi vs. bölüm 15 fiyat tablosu listesi); bölüm 04 listesi esas alındı: Auslandskrankenversicherung, Reiserücktrittversicherung, Reiseabbruchversicherung, Reisegepäckversicherung, Fahrradschutz, Mietwagen-Selbstbehalt, Jahres-Reiseversicherung, Geschäftsreiseversicherung.
+- **`/angebote` sayfasının anlamı:** fiyat/kampanya vitrini (8 ürünün büyük kart hali), form değil.
+
+**Hâlâ açık:**
+- **Tasarım footer'ındaki uydurma veriler:** Kurfürstendamm 214 Berlin adresi, HRB 184 226 B, BaFin-Register 5100-VU — tasarım aracının uydurduğu değerler, koda **geçirilmez**. Brief'teki adres (Am Flughafen 6, 36110 Schlitz), telefon (+49 221 123 456 0), e-posta (info@tsc-versicherung.de) ve Geschäftsführer adı ("Max Mustermann") de placeholder — brief'in kendi notu: *"Gerçek şirket bilgileri yayından önce TSC tarafından doğrulanıp girilecek."* HRB/BaFin-Register/USt-IdNr brief'te hiç verilmiyor.
+- **Fiyatlar:** brief "rakip piyasa benchmarkı" olarak 7-8 örnek fiyat veriyor (bölüm 15) ama kendi notu da diyor ki bunlar TSC'nin onaylı tarifesi değil. CLAUDE.md kuralı kazanır: onaylı tarife gelene kadar hepsi `approved: false`, ekranda hiçbir fiyat basılmaz.
+- **Eksik içerik:** FAQ cevapları (5/6 soru brief'te var, cevapları yok), Service sayfası detayı, "Für wen ist der Sicherungsschein?" tam metni, ürün fayda cümleleri (`benefit` alanları), hukuki metinler (Impressum/Datenschutz/AGB gövdesi), "Warum TSC?" madde metinleri, logo SVG, lisanslı fotoğraflar.
 
 ## Yapım sırası
 

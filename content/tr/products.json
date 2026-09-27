@@ -1,9 +1,9 @@
 [
   {
-    "slug": "produkt-1",
-    "name": "[METİN YOK: Ürün 1 Adı]",
+    "slug": "auslandskrankenversicherung",
+    "name": "Auslandskrankenversicherung (Yurt Dışı Sağlık Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 1 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Auslandskrankenversicherung Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -11,10 +11,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-2",
-    "name": "[METİN YOK: Ürün 2 Adı]",
+    "slug": "reiseruecktrittversicherung",
+    "name": "Reiserücktrittversicherung (Seyahat İptal Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 2 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Reiserücktrittversicherung Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -22,10 +22,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-3",
-    "name": "[METİN YOK: Ürün 3 Adı]",
+    "slug": "reiseabbruchversicherung",
+    "name": "Reiseabbruchversicherung (Seyahat Yarıda Kesilme Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 3 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Reiseabbruchversicherung Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -33,10 +33,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-4",
-    "name": "[METİN YOK: Ürün 4 Adı]",
+    "slug": "reisegepaeckversicherung",
+    "name": "Reisegepäckversicherung (Bagaj Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 4 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Reisegepäckversicherung Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -44,10 +44,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-5",
-    "name": "[METİN YOK: Ürün 5 Adı]",
+    "slug": "fahrradschutz",
+    "name": "Fahrradschutz (Bisiklet Koruması)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 5 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Fahrradschutz Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -55,10 +55,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-6",
-    "name": "[METİN YOK: Ürün 6 Adı]",
+    "slug": "mietwagen-selbstbehalt",
+    "name": "Mietwagen-Selbstbehalt (Kiralık Araç Muafiyet Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 6 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Mietwagen-Selbstbehalt Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -66,10 +66,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-7",
-    "name": "[METİN YOK: Ürün 7 Adı]",
+    "slug": "jahres-reiseversicherung",
+    "name": "Jahres-Reiseversicherung (Yıllık Seyahat Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 7 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Jahres-Reiseversicherung Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,
@@ -77,10 +77,10 @@
     "featured": true
   },
   {
-    "slug": "produkt-8",
-    "name": "[METİN YOK: Ürün 8 Adı]",
+    "slug": "geschaeftsreise",
+    "name": "Geschäftsreise (İş Seyahati Sigortası)",
     "icon": "shield",
-    "benefit": "[METİN YOK: Ürün 8 Fayda Cümlesi]",
+    "benefit": "[METİN YOK: Geschäftsreise Fayda Cümlesi]",
     "price": null,
     "period": null,
     "badge": null,

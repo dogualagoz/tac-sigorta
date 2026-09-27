@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type { IconName } from '~/types/icon'
+
 // CLAUDE.md "İkonlar": tek set, line stil, tek stroke kalınlığı (1.5px), emoji yok.
-const ICONS = {
+const ICONS: Record<IconName, string[]> = {
   'chevron-down': ['M6 9l6 6 6-6'],
   'plus': ['M12 5v14', 'M5 12h14'],
   'minus': ['M5 12h14'],
@@ -13,9 +15,7 @@ const ICONS = {
   'shield': ['M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z'],
   'menu': ['M4 7h16', 'M4 12h16', 'M4 17h16'],
   'close': ['M6 6l12 12', 'M18 6L6 18'],
-} as const
-
-type IconName = keyof typeof ICONS
+}
 
 const props = withDefaults(defineProps<{
   name: IconName

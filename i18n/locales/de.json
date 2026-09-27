@@ -10,7 +10,6 @@
     "faq": "FAQ",
     "kontakt": "Kontakt",
     "ueberUns": "Über uns",
-    "rechtsgrundlagen": "Rechtsgrundlagen",
     "ariaLabel": "Hauptnavigation"
   },
   "cta": {
@@ -21,12 +20,7 @@
     "weiter": "Weiter",
     "zurueck": "Zurück",
     "absenden": "Absenden",
-    "rueckrufVereinbaren": "Rückruf vereinbaren",
-    "anrufen": "Anrufen",
-    "referenzenAnsehen": "Referenzen ansehen",
-    "gesamtesTeam": "Gesamtes Team",
-    "alleMeldungen": "Alle Meldungen",
-    "zumDownloadcenter": "Zum Downloadcenter"
+    "anrufen": "Anrufen"
   },
   "price": {
     "aufAnfrage": "Preis auf Anfrage"
@@ -42,21 +36,24 @@
     "success": "Vielen Dank! Wir melden uns in Kürze.",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
+  "nachweis": {
+    "numberLabel": "Sicherungsschein-/Nachweisnummer",
+    "numberPlaceholder": "z. B. S123456789",
+    "nameLabel": "Name des Reiseveranstalters",
+    "namePlaceholder": "Name eingeben",
+    "submit": "Jetzt prüfen",
+    "notAvailableYet": "Diese Funktion ist in Kürze verfügbar."
+  },
   "a11y": {
     "skipLink": "Zum Hauptinhalt springen"
   },
   "trust": {
     "certifiedLabel": "Geprüft & beaufsichtigt"
   },
-  "home": {
-    "tariffFeatureLabel": "Leistung"
-  },
   "header": {
     "brandName": "TSC Versicherung",
     "topbar": {
-      "advisory": "Beratung für Reiseveranstalter",
-      "maklerportal": "Maklerportal",
-      "schadenmeldung": "Schadenmeldung"
+      "advisory": "Beratung für Reiseveranstalter"
     },
     "mobileMenu": {
       "open": "Menü öffnen",
@@ -71,12 +68,6 @@
       "produkte": "Produkte",
       "service": "Service",
       "unternehmen": "Unternehmen"
-    },
-    "links": {
-      "gruppenIncoming": "Gruppen- & Incoming",
-      "downloadcenter": "Downloadcenter",
-      "aktuelles": "Aktuelles",
-      "karriere": "Karriere"
     }
   },
   "dev": {

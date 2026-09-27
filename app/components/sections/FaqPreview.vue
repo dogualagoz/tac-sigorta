@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { HomeFaqSection } from '~/types/home'
-
+// Not `home.ts`'e bağlı — Sicherungsschein/Insolvenzabsicherung gibi kendi
+// içerik şeması olan sayfalarda da kullanılacak (adım 5).
 defineProps<{
-  faq: HomeFaqSection
+  faq: { label: string, title: string }
 }>()
 
 const { locale } = useI18n()
