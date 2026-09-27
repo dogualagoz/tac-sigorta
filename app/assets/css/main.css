@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Fontlar self-host — DSGVO gereği üçüncü taraf istek yok (bkz. CLAUDE.md "Gizlilik"). */
+@import "@fontsource-variable/libre-franklin";
+@import "@fontsource-variable/source-sans-3";
+
+@theme {
+  /* Renkler — design-reference/TOKENS.md içinde ölçülen değerler.
+     #7FB0DC ve #8AA2BC bilinçli olarak metin rengi olarak KULLANILMAZ (AA altı kontrast). */
+  --color-navy-900: #082343;
+  --color-navy-800: #0b2e59; /* CLAUDE.md --color-navy */
+  --color-navy-700: #13406f;
+  --color-navy-600: #28527e;
+  --color-navy-500: #38557a;
+
+  --color-blue-600: #0f5aa6; /* CLAUDE.md --color-blue, primary aksiyon */
+  --color-blue-300: #7fb0dc; /* yalnız dekoratif, metin olarak kullanma */
+
+  --color-slate-500: #5b7391; /* ikincil metin, AA geçer (~4.9:1) */
+  --color-slate-400: #8aa2bc; /* yalnız çizgi/ikon, metin olarak kullanma */
+
+  --color-sky: #eaf4fb; /* CLAUDE.md --color-sky, bölüm arka planı */
+  --color-surface: #f7fbfe;
+  --color-surface-2: #f2f7fc;
+  --color-surface-3: #e7f0f8;
+
+  --color-white: #ffffff;
+  --color-border: #d6e4f0; /* CLAUDE.md --color-border */
+  --color-border-strong: #bfd6ea;
+
+  --color-success: #1a7a4c;
+  --color-error: #b3261e;
+
+  /* Tipografi — Libre Franklin (başlık) + Source Sans 3 (gövde) */
+  --font-heading: "Libre Franklin Variable", "Libre Franklin", system-ui, sans-serif;
+  --font-body: "Source Sans 3 Variable", "Source Sans 3", system-ui, sans-serif;
+
+  /* 26 serbest değerden konsolide edilmiş 9 adımlı ölçek — TOKENS.md */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 15px;
+  --text-md: 17px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 30px;
+  --text-3xl: 40px;
+  --text-4xl: 54px;
+
+  /* Radius — CLAUDE.md: kart 8px, buton/input 6px, 12px üstü yok */
+  --radius-sm: 4px;
+  --radius-input: 6px;
+  --radius-card: 8px;
+  --radius-pill: 999px;
+
+  --container-max: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-navy-800);
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  /* Almanca uzun bileşik kelimeler (Insolvenzabsicherung vb.) için — CLAUDE.md "Tipografi" */
+  hyphens: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

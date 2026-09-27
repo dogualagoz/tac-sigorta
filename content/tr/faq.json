@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Sigorta yerine Reisesicherungsfonds'a hangi ciro seviyesinden itibaren girmem gerekiyor?",
+    "answer": "Paket turlardan ve bağlantılı seyahat hizmetlerinden yıllık 10 milyon €'nun üzerinde ciro elde ediliyorsa, Deutscher Reisesicherungsfonds üzerinden teminat zorunludur. Bu eşiğin altında sigortacı ile fon arasında seçim yapılabilir. TSC, rakamlarınızı inceleyip hangi yolun uygun olduğunu bildirir.",
+    "category": "sicherungsschein",
+    "approved": false
+  },
+  {
+    "question": "Risk değerlendirmesi için hangi belgelere ihtiyacınız var?",
+    "answer": "[METİN YOK: SSS Cevap 2]",
+    "category": "sicherungsschein",
+    "approved": false
+  },
+  {
+    "question": "Devam eden rezervasyonlar için geriye dönük Sicherungsschein düzenlenebilir mi?",
+    "answer": "[METİN YOK: SSS Cevap 3]",
+    "category": "sicherungsschein",
+    "approved": false
+  },
+  {
+    "question": "Teminat, Almanya dışında yerleşik tur operatörleri için de geçerli mi?",
+    "answer": "[METİN YOK: SSS Cevap 4]",
+    "category": "sicherungsschein",
+    "approved": false
+  },
+  {
+    "question": "İflas durumunda muafiyet tutarı ne kadar?",
+    "answer": "[METİN YOK: SSS Cevap 5]",
+    "category": "sicherungsschein",
+    "approved": false
+  }
+]

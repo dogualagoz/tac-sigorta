@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "produkt-1",
+    "name": "[METİN YOK: Ürün 1 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 1 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-2",
+    "name": "[METİN YOK: Ürün 2 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 2 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-3",
+    "name": "[METİN YOK: Ürün 3 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 3 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-4",
+    "name": "[METİN YOK: Ürün 4 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 4 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-5",
+    "name": "[METİN YOK: Ürün 5 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 5 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-6",
+    "name": "[METİN YOK: Ürün 6 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 6 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-7",
+    "name": "[METİN YOK: Ürün 7 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 7 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-8",
+    "name": "[METİN YOK: Ürün 8 Adı]",
+    "icon": "shield",
+    "benefit": "[METİN YOK: Ürün 8 Fayda Cümlesi]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  }
+]

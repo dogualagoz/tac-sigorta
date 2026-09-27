@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "produkt-1",
+    "name": "[TEXT FEHLT: Produkt 1 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 1 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-2",
+    "name": "[TEXT FEHLT: Produkt 2 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 2 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-3",
+    "name": "[TEXT FEHLT: Produkt 3 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 3 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-4",
+    "name": "[TEXT FEHLT: Produkt 4 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 4 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-5",
+    "name": "[TEXT FEHLT: Produkt 5 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 5 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-6",
+    "name": "[TEXT FEHLT: Produkt 6 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 6 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-7",
+    "name": "[TEXT FEHLT: Produkt 7 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 7 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  },
+  {
+    "slug": "produkt-8",
+    "name": "[TEXT FEHLT: Produkt 8 Name]",
+    "icon": "shield",
+    "benefit": "[TEXT FEHLT: Produkt 8 Nutzenversprechen]",
+    "price": null,
+    "period": null,
+    "badge": null,
+    "approved": false,
+    "featured": true
+  }
+]

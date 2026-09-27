@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "startseite": "Ana Sayfa",
+    "sicherungsschein": "Sicherungsschein (Teminat Belgesi)",
+    "insolvenzabsicherung": "Insolvenzabsicherung (İflas Teminatı)",
+    "reiseversicherungen": "Seyahat Sigortaları",
+    "service": "Hizmetler",
+    "angebote": "Teklif Al",
+    "nachweisPruefen": "Belge Doğrulama",
+    "faq": "SSS",
+    "kontakt": "İletişim",
+    "ueberUns": "Hakkımızda",
+    "rechtsgrundlagen": "Yasal Dayanak",
+    "ariaLabel": "Ana Navigasyon"
+  },
+  "cta": {
+    "nachweisPruefen": "Belge Doğrula",
+    "angebotAnfordern": "Teklif İste",
+    "individuellesAngebot": "Özel Teklif",
+    "mehrErfahren": "Daha Fazla",
+    "weiter": "İleri",
+    "zurueck": "Geri",
+    "absenden": "Gönder",
+    "rueckrufVereinbaren": "Geri Arama Talep Et",
+    "anrufen": "Ara",
+    "referenzenAnsehen": "Referansları Gör",
+    "gesamtesTeam": "Tüm Ekip",
+    "alleMeldungen": "Tüm Duyurular",
+    "zumDownloadcenter": "İndirme Merkezine Git"
+  },
+  "price": {
+    "aufAnfrage": "Fiyat için teklif isteyin"
+  },
+  "form": {
+    "name": "İsim",
+    "email": "E-Posta",
+    "unternehmen": "Şirket",
+    "anliegen": "Konu",
+    "nachricht": "Mesaj",
+    "dsgvoConsent": "Gizlilik politikasını okudum ve verilerimin işlenmesini kabul ediyorum.",
+    "loading": "Gönderiliyor …",
+    "success": "Teşekkürler! En kısa sürede size dönüş yapacağız.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  },
+  "a11y": {
+    "skipLink": "Ana içeriğe geç"
+  },
+  "trust": {
+    "certifiedLabel": "Denetime tabi kuruluş"
+  },
+  "home": {
+    "tariffFeatureLabel": "Özellik"
+  },
+  "header": {
+    "brandName": "TSC Versicherung",
+    "topbar": {
+      "advisory": "Tur operatörleri için danışmanlık",
+      "maklerportal": "Aracı Portalı",
+      "schadenmeldung": "Hasar Bildirimi"
+    },
+    "mobileMenu": {
+      "open": "Menüyü aç",
+      "close": "Menüyü kapat"
+    }
+  },
+  "footer": {
+    "impressum": "Yasal Bilgiler (Impressum)",
+    "datenschutz": "Gizlilik Politikası",
+    "agb": "Genel Şartlar (AGB)",
+    "columns": {
+      "produkte": "Ürünler",
+      "service": "Hizmetler",
+      "unternehmen": "Kurumsal"
+    },
+    "links": {
+      "gruppenIncoming": "Grup ve Incoming",
+      "downloadcenter": "İndirme Merkezi",
+      "aktuelles": "Duyurular",
+      "karriere": "Kariyer"
+    }
+  },
+  "dev": {
+    "locale": "Geliştirici"
+  }
+}

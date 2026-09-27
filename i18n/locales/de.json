@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "startseite": "Startseite",
+    "sicherungsschein": "Sicherungsschein",
+    "insolvenzabsicherung": "Insolvenzabsicherung",
+    "reiseversicherungen": "Reiseversicherungen",
+    "service": "Service",
+    "angebote": "Angebote",
+    "nachweisPruefen": "Nachweis prüfen",
+    "faq": "FAQ",
+    "kontakt": "Kontakt",
+    "ueberUns": "Über uns",
+    "rechtsgrundlagen": "Rechtsgrundlagen",
+    "ariaLabel": "Hauptnavigation"
+  },
+  "cta": {
+    "nachweisPruefen": "Nachweis prüfen",
+    "angebotAnfordern": "Angebot anfordern",
+    "individuellesAngebot": "Individuelles Angebot",
+    "mehrErfahren": "Mehr erfahren",
+    "weiter": "Weiter",
+    "zurueck": "Zurück",
+    "absenden": "Absenden",
+    "rueckrufVereinbaren": "Rückruf vereinbaren",
+    "anrufen": "Anrufen",
+    "referenzenAnsehen": "Referenzen ansehen",
+    "gesamtesTeam": "Gesamtes Team",
+    "alleMeldungen": "Alle Meldungen",
+    "zumDownloadcenter": "Zum Downloadcenter"
+  },
+  "price": {
+    "aufAnfrage": "Preis auf Anfrage"
+  },
+  "form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "unternehmen": "Unternehmen",
+    "anliegen": "Anliegen",
+    "nachricht": "Nachricht",
+    "dsgvoConsent": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "loading": "Wird gesendet …",
+    "success": "Vielen Dank! Wir melden uns in Kürze.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "a11y": {
+    "skipLink": "Zum Hauptinhalt springen"
+  },
+  "trust": {
+    "certifiedLabel": "Geprüft & beaufsichtigt"
+  },
+  "home": {
+    "tariffFeatureLabel": "Leistung"
+  },
+  "header": {
+    "brandName": "TSC Versicherung",
+    "topbar": {
+      "advisory": "Beratung für Reiseveranstalter",
+      "maklerportal": "Maklerportal",
+      "schadenmeldung": "Schadenmeldung"
+    },
+    "mobileMenu": {
+      "open": "Menü öffnen",
+      "close": "Menü schließen"
+    }
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "agb": "AGB",
+    "columns": {
+      "produkte": "Produkte",
+      "service": "Service",
+      "unternehmen": "Unternehmen"
+    },
+    "links": {
+      "gruppenIncoming": "Gruppen- & Incoming",
+      "downloadcenter": "Downloadcenter",
+      "aktuelles": "Aktuelles",
+      "karriere": "Karriere"
+    }
+  },
+  "dev": {
+    "locale": "Dev"
+  }
+}

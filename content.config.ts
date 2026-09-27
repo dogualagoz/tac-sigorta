@@ -1,0 +1,203 @@
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+
+// CLAUDE.md "Ürün ve fiyat kuralı" — bu şema birebir korunur.
+const productSchema = z.object({
+  slug: z.string(),
+  name: z.string(),
+  icon: z.string(),
+  benefit: z.string(),
+  price: z.number().nullable(),
+  period: z.enum(['pro Jahr', 'pro Reise', 'je nach Tarif']).nullable(),
+  badge: z.enum(['Top Preis', 'Beliebt', 'Neu', 'Bestseller']).nullable(),
+  approved: z.boolean().default(false),
+  featured: z.boolean().default(false),
+})
+
+const faqEntrySchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+  category: z.string().optional(),
+  approved: z.boolean().default(false),
+})
+
+// Tek kaynak, dile bağlı değil — CLAUDE.md "Klasör yapısı".
+const siteSchema = z.object({
+  companyName: z.string().nullable(),
+  legalForm: z.string().nullable(),
+  tagline: z.string().nullable(),
+  street: z.string().nullable(),
+  postalCode: z.string().nullable(),
+  city: z.string().nullable(),
+  phone: z.string().nullable(),
+  email: z.string().nullable(),
+  openingHours: z.string().nullable(),
+  hrb: z.string().nullable(),
+  bafinRegister: z.string().nullable(),
+  ustIdNr: z.string().nullable(),
+  geschaeftsfuehrer: z.string().nullable(),
+})
+
+// Tanıtım düzyazısı için ortak alan: brief gelene kadar approved: false.
+const pageSchema = z.object({
+  approved: z.boolean().default(false),
+})
+
+// Startseite — tekrarlı bloklar (süreç adımları, tarife, referanslar vb.) düz
+// markdown gövdesine sığmadığı için ayrı, yapılandırılmış bir şema kullanılır.
+// bkz. onaylı plan "İçerik mimarisi": elegant-sparking-piglet.md
+const homeSchema = z.object({
+  approved: z.boolean().default(false),
+  hero: z.object({
+    badge: z.string(),
+    title: z.string(),
+    subtitle: z.string(),
+    note: z.string(),
+    primaryCta: z.string(),
+    secondaryCta: z.string(),
+    trustLine: z.array(z.string()),
+  }),
+  qualifier: z.object({
+    title: z.string(),
+    description: z.string(),
+    revenueLabel: z.string(),
+    revenueOptions: z.array(z.string()),
+    locationLabel: z.string(),
+    locationOptions: z.array(z.string()),
+    ctaLabel: z.string(),
+    disclaimer: z.string(),
+  }),
+  trustBadges: z.array(z.object({ label: z.string() })),
+  legal: z.object({
+    label: z.string(),
+    title: z.string(),
+    paragraphs: z.array(z.string()),
+    summary: z.string(),
+    quoteRef: z.string(),
+    quoteText: z.string(),
+    stats: z.array(z.object({ value: z.string(), label: z.string() })),
+    links: z.array(z.object({ label: z.string(), href: z.string() })),
+  }),
+  process: z.object({
+    label: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    steps: z.array(z.object({
+      day: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })),
+  }),
+  tariffs: z.object({
+    label: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    columns: z.array(z.object({ name: z.string(), badge: z.string().nullable() })),
+    rows: z.array(z.object({ label: z.string(), values: z.array(z.string()) })),
+    footnote: z.string(),
+  }),
+  faq: z.object({
+    label: z.string(),
+    title: z.string(),
+  }),
+  testimonials: z.object({
+    title: z.string(),
+    items: z.array(z.object({
+      quote: z.string(),
+      author: z.string(),
+      role: z.string(),
+      company: z.string(),
+    })),
+  }),
+  downloads: z.object({
+    title: z.string(),
+    description: z.string(),
+    items: z.array(z.object({ label: z.string(), meta: z.string() })),
+    ctaLabel: z.string(),
+  }),
+  team: z.object({
+    label: z.string(),
+    title: z.string(),
+    linkLabel: z.string(),
+    members: z.array(z.object({
+      name: z.string(),
+      role: z.string(),
+      phone: z.string(),
+      email: z.string(),
+      languages: z.array(z.string()),
+    })),
+  }),
+  news: z.object({
+    title: z.string(),
+    intro: z.string(),
+    linkLabel: z.string(),
+    items: z.array(z.object({
+      date: z.string(),
+      title: z.string(),
+      description: z.string(),
+    })),
+  }),
+  cta: z.object({
+    title: z.string(),
+    description: z.string(),
+    primaryCta: z.string(),
+    secondaryCta: z.string(),
+  }),
+})
+
+export default defineContentConfig({
+  collections: {
+    dePages: defineCollection({
+      type: 'page',
+      source: { include: 'de/pages/**/*.md', exclude: ['de/pages/index.md'], prefix: '' },
+      schema: pageSchema,
+    }),
+    deHome: defineCollection({
+      type: 'page',
+      source: { include: 'de/pages/index.md', prefix: '' },
+      schema: homeSchema,
+    }),
+    deLegal: defineCollection({
+      type: 'page',
+      source: { include: 'de/legal/**/*.md', prefix: '' },
+    }),
+    deProducts: defineCollection({
+      type: 'data',
+      source: 'de/products.json',
+      schema: productSchema,
+    }),
+    deFaq: defineCollection({
+      type: 'data',
+      source: 'de/faq.json',
+      schema: faqEntrySchema,
+    }),
+    trPages: defineCollection({
+      type: 'page',
+      source: { include: 'tr/pages/**/*.md', exclude: ['tr/pages/index.md'], prefix: '' },
+      schema: pageSchema,
+    }),
+    trHome: defineCollection({
+      type: 'page',
+      source: { include: 'tr/pages/index.md', prefix: '' },
+      schema: homeSchema,
+    }),
+    trLegal: defineCollection({
+      type: 'page',
+      source: { include: 'tr/legal/**/*.md', prefix: '' },
+    }),
+    trProducts: defineCollection({
+      type: 'data',
+      source: 'tr/products.json',
+      schema: productSchema,
+    }),
+    trFaq: defineCollection({
+      type: 'data',
+      source: 'tr/faq.json',
+      schema: faqEntrySchema,
+    }),
+    site: defineCollection({
+      type: 'data',
+      source: 'site.json',
+      schema: siteSchema,
+    }),
+  },
+})
